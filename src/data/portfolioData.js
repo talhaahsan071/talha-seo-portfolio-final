@@ -10,7 +10,7 @@ export const personalInfo = {
   agencyRole: "SEO Expert & Growth Lead @ Delenzo Technologies Pvt. Ltd.",
   freelanceFocus: "360° Digital Marketing & SEO for Global E-Commerce, B2B & Service Brands",
   education: "BBIT (Bachelors in Business & Information Technology) — Virtual University of Pakistan",
-  domain: "talhaseo.com",
+  domain: "talhaahsan.vercel.app",
   email: "talhaahsandigital@gmail.com",
   linkedin: "https://www.linkedin.com/in/talhaahsanofficial",
   whatsapp: "https://wa.me/923204966959?text=Hi%20Talha,%20I'd%20like%20to%20discuss%20a%20digital%20marketing%20%26%20SEO%20project.",
@@ -28,7 +28,7 @@ export const personalInfo = {
 };
 
 export const heroSnippet = {
-  breadcrumb: "talhaseo.com › 360-digital-marketer › global-growth",
+  breadcrumb: "talhaahsan.vercel.app › 360-digital-marketer › global-growth",
   title: "Talha Ahsan — 360° Digital Marketer & SEO Specialist",
   snippet: "Full-stack digital growth strategist delivering end-to-end SEO, conversion optimization, and high-performance search systems across global e-commerce, B2B, legal, tech, and enterprise brands.",
   chips: [
