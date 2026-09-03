@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-void: #FFFFFF;
+  --color-ink: #F8F4FF;
+  --color-surface: #FFFFFF;
+  --color-edge: #E9D8FD;
+  --color-signal: #7C3AED;
+  --color-rank: #D946EF;
+  --color-index: #6366F1;
+  --color-text-hi: #0F0728;
+  --color-text-mid: #3B2B5C;
+  --color-text-muted: #6B5B8D;
+  --color-growth: #059669;
+}
+
+:root {
+  --void: #FFFFFF;
+  --ink: #F8F4FF;
+  --surface: #FFFFFF;
+  --edge: #E9D8FD;
+  --signal: #7C3AED;
+  --rank: #D946EF;
+  --index: #6366F1;
+  --text-hi: #0F0728;
+  --text-mid: #3B2B5C;
+  --text-muted: #6B5B8D;
+  --growth: #059669;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #0F0728;
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Purple Glow Shadows */
+.purple-glow {
+  box-shadow: 0 15px 35px -5px rgba(124, 58, 237, 0.10), 0 0 15px 0 rgba(124, 58, 237, 0.04);
+}
+
+.purple-glow-lg {
+  box-shadow: 0 25px 50px -12px rgba(124, 58, 237, 0.15);
+}
+
+/* Custom Focus Ring for Accessibility */
+*:focus-visible {
+  outline: 2px solid #7C3AED;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #E9D8FD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7C3AED;
+}
+
+/* Upward SVG Line Trace Animation */
+@keyframes drawTrace {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-line-trace {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawTrace 2.5s ease-out forwards;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+}
