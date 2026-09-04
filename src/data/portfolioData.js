@@ -28,7 +28,7 @@ export const personalInfo = {
 };
 
 export const heroSnippet = {
-  breadcrumb: "talhaahsan.vercel.app › seo-expert › digital-growth",
+  breadcrumb: "talhaahsan.vercel.app › Proven Growth › +280% Traffic Jump & Real Revenue",
   title: "Talha Ahsan — SEO Expert & Technical Growth Strategist",
   snippet: "Search Engine Optimization specialist and digital growth architect. Delivering technical site audits, Core Web Vitals engineering, programmatic AI search pipelines, and high-converting organic frameworks across e-commerce, B2B, and global scale-ups.",
   chips: [
@@ -41,39 +41,39 @@ export const heroSnippet = {
 };
 
 export const entityBio = {
-  badge: "OFFICIAL ENTITY PROFILE & KNOWLEDGE HUB",
-  title: "Who is Talha Ahsan?",
-  subheading: "Structured Named Entity Overview for Search Engines, AI Knowledge Retrieval (GEO), and Industry Representation",
+  badge: "THE STRATEGIST BEHIND THE GROWTH",
+  title: "Meet Talha Ahsan",
+  subheading: "The modern SEO strategist helping e-commerce stores and ambitious businesses scale organic revenue without ad dependency.",
   definitionalProse: [
-    "Talha Ahsan is an accomplished Search Engine Optimization (SEO) expert, technical growth consultant, and 360° digital marketing strategist based in Lahore, Pakistan, working with high-growth e-commerce brands, B2B enterprises, and global organizations. Specializing in advanced technical site architecture, Core Web Vitals engineering, programmatic search automation, and Generative Engine Optimization (GEO), he engineers high-impact organic search systems that translate search engine visibility into defensible, revenue-generating growth channels.",
-    "With continuous hands-on experience spanning 50+ projects across e-commerce retail, high-ticket legal services, healthcare non-profits, technology scale-ups, and commercial logistics, Talha combines algorithmic search science with modern full-funnel marketing. Rather than relying on superficial checklists or vanity impression metrics, his framework centers on buyer intent mapping, semantic schema markup, crawl budget optimization, and conversion-focused content architecture.",
-    "Talha's documented track record includes scaling Hope Enterprises to over 10,700 organic clicks with a +280% traffic surge, taking Carrot Sun Oil from flat search numbers to 60+ targeted commercial buyers daily with an average position of 7.2, capturing top Google Maps 3-pack rankings for commercial retail hubs, and driving a 300% surge in qualified inbound inquiries for competitive UAE legal advisory firms."
+    "Talha Ahsan is an accomplished Search Engine Optimization (SEO) expert and digital growth consultant based in Lahore, Pakistan. Working with high-growth e-commerce brands, B2B enterprises, and global organizations, he engineers high-impact search systems that translate Google rankings into predictable, high-margin revenue.",
+    "With hands-on experience across 50+ projects in e-commerce, legal services, commercial retail, and tech scale-ups, Talha bridges algorithmic technical SEO with modern customer acquisition. Rather than relying on superficial checklists or vanity traffic metrics, his framework centers on capturing high-intent commercial buyers, programmatic search automation, and conversion-focused architectures.",
+    "His documented track record includes delivering 10,700+ organic clicks for Hope Enterprises (+280% traffic surge), scaling Carrot Sun Oil from flat search to 60+ daily commercial buyers with an average position of 7.2 on Page 1, dominating Google Maps Top 3 Map Packs for commercial retail hubs, and driving a 300% surge in qualified inbound leads for UAE legal advisory firms."
   ],
   coreOfferings: [
     {
-      title: "Advanced Technical SEO & Crawl Architecture",
-      icon: "Cpu",
-      description: "Deep log analysis, JavaScript rendering optimization, crawl budget preservation, Core Web Vitals speed tuning (sub-2.2s LCP), canonical hierarchy, and custom JSON-LD schema architecture."
-    },
-    {
       title: "E-Commerce Organic Scaling & Catalog Hierarchy",
       icon: "ShoppingCart",
-      description: "Full-funnel collection restructuring, faceted navigation index control, multi-currency search architectures (Shopify, WooCommerce, custom CMS), and high-intent buyer keyword capture."
+      description: "Restructuring store collection hierarchy, fixing faceted navigation indexation, and capturing high-intent buyers searching for specific commercial product lines."
     },
     {
-      title: "Generative Engine Optimization (GEO) & AI Search",
+      title: "Technical SEO & Core Web Vitals Speed Engineering",
+      icon: "Cpu",
+      description: "Eliminating invisible code leaks, fixing JavaScript rendering, optimizing crawl budget, and achieving sub-2.2s LCP load speeds that Google algorithms reward."
+    },
+    {
+      title: "AI-Powered SEO & Programmatic Search Workflows",
       icon: "Sparkles",
-      description: "Preparing brands for Google AI Overviews, Gemini Search, and ChatGPT search discovery through structured entity definitions, topical depth hubs, and authoritative information architecture."
+      description: "Deploying custom AI search pipelines and modern automation to research thousands of buyer intent queries and build topical authority 5x faster than legacy agencies."
     },
     {
-      title: "Local SEO & Google Business Profile #1 Rankings",
+      title: "Google Maps & Local 3-Pack Domination",
       icon: "MapPin",
-      description: "Dominating local 3-pack search results for retail hubs and regional service businesses via verified category alignment, NAP synchronization, localized schema, and automated review funnels."
+      description: "Dominating local search results for retail stores and service businesses via verified category optimization, local schema, and automated customer review funnels."
     },
     {
-      title: "360° Digital Marketing & Conversion Architecture",
+      title: "Conversion Rate Optimization (CRO) & Buyer Journey",
       icon: "Target",
-      description: "Connecting search traffic directly with conversion rate optimization (CRO), persuasive UX, landing page optimization, and high-margin customer acquisition channels."
+      description: "Connecting search visibility directly with revenue: optimizing landing page layouts, copy psychology, and click-to-lead funnels so traffic actually buys."
     }
   ]
 };
@@ -207,74 +207,92 @@ export const certificatesList = [
   }
 ];
 
+// Direct Problem-Solving Services for Real Client Pains
 export const skills = [
   {
-    id: "tech-seo",
-    title: "Technical SEO & Web Architecture (Priority #1)",
-    icon: "Cpu",
-    description: "Crawl budget efficiency, JavaScript rendering, Core Web Vitals (sub-2.2s), canonical cleanup, XML sitemaps, and log file analysis.",
-    tags: ["Core Web Vitals", "Indexing", "Crawl Budget", "Schema.org"]
-  },
-  {
     id: "ecommerce-seo",
-    title: "Global E-Commerce Search & Catalog Hierarchy",
+    title: "E-Commerce Store Scaling & Catalog Architecture",
     icon: "ShoppingCart",
-    description: "Multi-region, multi-currency store architecture on Shopify, WooCommerce & custom CMS with faceted navigation index control.",
-    tags: ["Shopify Liquid", "WooCommerce", "Faceted Nav", "Product Schema"]
-  },
-  {
-    id: "geo-ai-search",
-    title: "Generative Engine Optimization (GEO) & AI Search",
-    icon: "Sparkles",
-    description: "Optimizing entity visibility for Google AI Overviews, Gemini Search, and ChatGPT through structured Knowledge Graph architectures.",
-    tags: ["AI Overviews", "GEO Strategy", "Knowledge Graph", "Entity SEO"]
-  },
-  {
-    id: "on-page",
-    title: "On-Page & Search Intent Architecture",
-    icon: "FileCode2",
-    description: "Buyer-stage intent alignment, semantic content architecture, heading taxonomy, internal link hubs, and CTR-optimized SERP snippets.",
-    tags: ["Intent Mapping", "Semantic HTML", "Internal Links", "CTR Lift"]
+    problemSolved: "Tired of burning thousands on Meta/Google Ads for single-digit margins?",
+    description: "I restructure store collections, fix product indexing leaks, and target high-intent commercial terms so ready-to-buy customers find your store organically without ad dependency.",
+    tags: ["Shopify & WooCommerce", "High-Intent Buyers", "Zero Ad Burn", "Catalog SEO"]
   },
   {
     id: "local-seo",
-    title: "Local SEO & Google Maps (GBP) #1 Rank",
+    title: "Google Maps & Local 3-Pack Domination",
     icon: "MapPin",
-    description: "Google Business Profile optimization, local 3-pack dominance, NAP citation synchronization, and automated review velocity.",
-    tags: ["Google Maps #1", "Local Pack", "NAP Consistency", "Review Funnels"]
+    problemSolved: "Nearby competitors stealing your local customers, walk-ins, and phone calls?",
+    description: "Capture buyers searching in your city right now. I optimize your Google Business Profile (GBP), sync citations, and implement review funnels to put you in the Top 3 Map Pack.",
+    tags: ["Top 3 Map Pack", "Google Business Profile", "Inbound Phone Calls", "Local Authority"]
   },
   {
-    id: "off-page",
-    title: "Off-Page Authority & Digital PR",
-    icon: "Share2",
-    description: "Contextual high-DA outreach, unlinked brand mention recovery, digital PR campaigns, and toxic link profile disavow cleanup.",
-    tags: ["Digital PR", "Contextual Backlinks", "Brand Mentions", "Authority"]
+    id: "tech-seo",
+    title: "Technical SEO & Indexing Recovery",
+    icon: "Cpu",
+    problemSolved: "Google refusing to index your new products or ranking your site on page 4?",
+    description: "I find and fix the invisible technical bottlenecks stopping your growth: crawl budget waste, JavaScript rendering issues, broken canonicals, and Core Web Vitals speed lags.",
+    tags: ["Zero Index Bloat", "Core Web Vitals", "Crawl Efficiency", "Clean Architecture"]
   },
   {
-    id: "keyword-research",
-    title: "Commercial Keyword & SERP Research",
-    icon: "Search",
-    description: "High-converting commercial keyword discovery, competitor gap analysis, buyer-journey clustering, and share-of-voice expansion.",
-    tags: ["SERP Gap", "High-Intent", "Funnel Mapping", "Competitor Intel"]
+    id: "ai-seo",
+    title: "AI-Powered Search & Modern Workflows",
+    icon: "Sparkles",
+    problemSolved: "Traditional agencies taking 3 months to deliver basic spreadsheets?",
+    description: "I deploy cutting-edge AI pipelines and programmatic search automation to analyze thousands of buyer intent queries and build topical clusters 5x faster than legacy agencies.",
+    tags: ["Programmatic AI", "5x Faster Execution", "Topical Clusters", "Modern Search"]
   },
   {
-    id: "360-growth",
-    title: "360° Digital Marketing & CRO Synergy",
+    id: "cro-growth",
+    title: "Conversion Rate Optimization (CRO) & User Journeys",
     icon: "Target",
-    description: "Full-funnel digital marketing support: bridging search traffic with conversion rate optimization (CRO), landing page design, and lead nurturing.",
-    tags: ["CRO Synergy", "Landing Pages", "Full-Funnel", "Lead Gen"]
+    problemSolved: "Getting website clicks and visitors, but nobody is actually buying or calling?",
+    description: "Traffic is worthless if visitors bounce. I optimize page UX, trust elements, heading psychology, and inquiry funnels so cold search visitors convert into paying clients.",
+    tags: ["Higher Conversion", "Landing Page UX", "Intent Alignment", "Revenue Growth"]
+  },
+  {
+    id: "brand-launch",
+    title: "New Brand Search Launch & Day-1 Authority",
+    icon: "Award",
+    problemSolved: "Launching a new store or service brand and trapped in the Google sandbox?",
+    description: "Establish immediate topical authority, get indexed rapidly, and rank for priority commercial keywords from Day 1 without waiting 6 months for Google to notice your site.",
+    tags: ["Day-1 Authority", "Rapid Indexing", "Market Entry", "Competitive Edge"]
   }
 ];
 
-export const tools = [
-  { name: "Google Search Console", category: "Performance & Indexing", proficiency: "Expert", desc: "Index Coverage, Search Analytics, Inspection API, Crawl Optimization" },
-  { name: "Google Analytics 4", category: "User Journey & Conversions", proficiency: "Expert", desc: "Custom Funnels, Revenue Tracking, Traffic Attribution & Event Tracking" },
-  { name: "Ahrefs", category: "Backlinks & Competitor Gap", proficiency: "Expert", desc: "Keyword Explorer, Site Audit, Link Intersect, Content Gap Analysis" },
-  { name: "SEMrush", category: "Keyword Research & Visibility", proficiency: "Expert", desc: "Domain Overview, Keyword Magic, Position Tracking, Organic Insights" },
-  { name: "Screaming Frog", category: "Technical Web Auditing", proficiency: "Advanced", desc: "JavaScript Crawling, Custom Regex Extraction, Status Codes & Canonicals" },
-  { name: "Surfer SEO", category: "On-Page Content Optimization", proficiency: "Advanced", desc: "Content Editor, SERP Analyzer, NLP Density, Semantic Keyword Usage" },
-  { name: "Rank Math PRO", category: "WordPress & Schema Architecture", proficiency: "Expert", desc: "Rich Snippets, Advanced JSON-LD Schema, Redirections, Instant Indexing" },
-  { name: "Google Tag Manager", category: "Tracking & Conversion Tags", proficiency: "Advanced", desc: "Custom Event Triggers, Conversion Tracking, Meta Pixel Integration" }
+// The Top 1% Advantage: Why Modern Brands Hire Talha Ahsan Over Traditional Agencies
+export const top1PercentAdvantage = [
+  {
+    number: "01",
+    title: "Ruthless Competitor Gap Hunting",
+    subtitle: "No cookie-cutter templates or generic assumptions",
+    description: "I don't guess what will rank. I reverse-engineer your top 5 competitors, dissect their backlink profiles, find where their content is thin, and attack those exact ranking gaps.",
+    metric: "Deep Intelligence",
+    badge: "100% Data-Driven"
+  },
+  {
+    number: "02",
+    title: "Cutting-Edge AI-First Execution",
+    subtitle: "Moving 5x faster than traditional slow agencies",
+    description: "While traditional agencies take weeks to deliver basic spreadsheets, I leverage custom AI scripts and programmatic pipelines to analyze thousands of buyer keywords and intent clusters in hours.",
+    metric: "5x Faster Speed",
+    badge: "Modern Workflows"
+  },
+  {
+    number: "03",
+    title: "Obsessed with Real Revenue & Sales",
+    subtitle: "Traffic that pays, not useless vanity clicks",
+    description: "A graph going up means nothing if your bank account doesn't grow. Every sprint, keyword, and content piece is chosen based on commercial buyer intent and real customer acquisition.",
+    metric: "Real Business ROI",
+    badge: "Revenue Focus"
+  },
+  {
+    number: "04",
+    title: "Direct Senior-Level Collaboration",
+    subtitle: "100% accountability with the expert doing the work",
+    description: "No dealing with junior account managers, outsourced interns, or communication delays. You collaborate directly with me—ensuring immediate execution and complete transparency.",
+    metric: "Zero Middlemen",
+    badge: "Direct Contact"
+  }
 ];
 
 export const caseStudies = [
@@ -394,14 +412,14 @@ export const processSteps = [
     step: "01",
     title: "Deep Technical & Crawl Audit",
     subtitle: "Uncovering invisible search bottlenecks",
-    description: "Comprehensive inspection using Screaming Frog, GSC, and server logs to eliminate index bloat, crawl budget waste, Core Web Vitals lag, and canonical confusion.",
+    description: "Comprehensive inspection to eliminate index bloat, crawl budget waste, Core Web Vitals lag, and canonical confusion that keep Google from ranking your site.",
     deliverable: "Technical SEO Priority & Remediation Matrix"
   },
   {
     step: "02",
     title: "Commercial Intent & Competitor Gap",
     subtitle: "Targeting revenue, not vanity traffic",
-    description: "Reverse-engineering competitor ranking gaps across global search engines to capture high-converting buyer-stage keywords and customer acquisition funnels.",
+    description: "Reverse-engineering competitor ranking gaps to capture high-converting buyer-stage keywords and customer acquisition funnels that actually convert.",
     deliverable: "High-Intent Keyword & SERP Opportunity Map"
   },
   {
@@ -413,7 +431,7 @@ export const processSteps = [
   },
   {
     step: "04",
-    title: "Topical Authority & Entity Building",
+    title: "Topical Authority & Content Architecture",
     subtitle: "Dominating search engine trust & GEO",
     description: "Building comprehensive content hubs to establish topical depth while acquiring contextual, high-authority brand citations and natural editorial backlinks.",
     deliverable: "Content Architecture & Backlink Acquisition"

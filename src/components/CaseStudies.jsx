@@ -40,7 +40,7 @@ export default function CaseStudies() {
         <div className="mb-12 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-3 shadow-xs font-bold">
             <span className="w-2 h-2 rounded-full bg-[#7C3AED]" />
-            <span>04 // Verified Case Studies &amp; Proven ROI</span>
+            <span>PROVEN CASE STUDIES &amp; REAL-WORLD SEARCH VICTORIES</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-5xl font-extrabold text-[#0F0728] leading-tight">
             Data-Backed Search Victories

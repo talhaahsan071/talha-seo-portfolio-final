@@ -2,10 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   Sparkles, 
-  Target, 
-  Cpu, 
-  TrendingUp, 
   ArrowRight,
+  TrendingUp,
   ShieldCheck,
   CheckCircle2
 } from 'lucide-react';
@@ -20,14 +18,14 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Pill Badge & Heading matching Reference */}
+        {/* Section Pill Badge & Heading */}
         <div className="mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-3 shadow-xs font-bold">
             <Sparkles className="w-3.5 h-3.5 text-[#7C3AED]" />
             <span>ABOUT TALHA AHSAN</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0F0728] tracking-tight">
-            More Than Just A Marketer.
+            More Than Just An SEO.
           </h2>
         </div>
 
@@ -45,7 +43,7 @@ export default function About() {
             >
               <img
                 src={personalInfo.photos.headshot}
-                alt="Talha Ahsan — 360 Digital Marketer & SEO Specialist"
+                alt="Talha Ahsan — SEO Expert & Growth Strategist"
                 className="w-full h-[480px] object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
               
@@ -53,16 +51,16 @@ export default function About() {
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#E9D8FD] text-[#0F0728] shadow-xl flex items-center justify-between">
                 <div>
                   <h3 className="font-heading text-lg font-bold text-[#0F0728]">TALHA AHSAN</h3>
-                  <p className="font-mono text-xs text-[#7C3AED] font-bold">SEO Expert &amp; Digital Growth Lead</p>
+                  <p className="font-mono text-xs text-[#7C3AED] font-bold">SEO Expert &amp; Technical Growth Lead</p>
                 </div>
                 <div className="px-3 py-1 rounded-xl bg-[#F3E8FF] border border-[#E9D8FD] font-mono text-[11px] text-[#7C3AED] font-bold">
-                  360° Growth
+                  Top 1% Execution
                 </div>
               </div>
             </motion.div>
           </div>
 
-          {/* Right Column: Storytelling Content, 2 Cards, and Stats Bar (7 cols) */}
+          {/* Right Column: Storytelling Content & Stats Bar (7 cols) */}
           <div className="lg:col-span-7 space-y-8">
             
             {/* Storytelling Intro in Simple, Engaging, Human Tone */}
@@ -72,49 +70,16 @@ export default function About() {
               </p>
               
               <p className="text-base text-[#4A3B69] font-medium leading-relaxed">
-                From technical SEO and search architecture to high-converting content and performance strategies, I combine data with practical execution to build digital systems that deliver measurable results.
+                From solving complex technical site hurdles and e-commerce catalog structures to capturing high-intent commercial buyers, I combine data with practical execution to build digital search systems that deliver measurable revenue.
               </p>
 
               <p className="text-base text-[#4A3B69] font-medium leading-relaxed">
-                I don't believe in vanity traffic or bloated checklists. Every sprint, audit, and campaign is designed with one clear goal: accelerating your business growth and turning visitors into loyal clients.
+                I don't believe in vanity traffic, bloated checklists, or waiting months for basic progress. Every sprint, audit, and keyword target is designed with one clear outcome: accelerating your business growth and turning organic search visitors into loyal, paying clients.
               </p>
             </div>
 
-            {/* 2 Feature Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              
-              <div className="p-5 rounded-2xl bg-[#F8F4FF] border border-[#E9D8FD] hover:border-[#7C3AED] transition-all shadow-xs group">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="p-2.5 rounded-xl bg-white border border-[#E9D8FD] text-[#7C3AED] shadow-2xs group-hover:scale-105 transition-transform">
-                    <Target className="w-5 h-5" />
-                  </div>
-                  <h3 className="font-heading text-base font-bold text-[#0F0728]">
-                    Engineered for Conversion
-                  </h3>
-                </div>
-                <p className="font-sans text-xs sm:text-sm text-[#5B4B7C] font-medium leading-relaxed">
-                  Fast, clean, and crafted to guide search visitors straight into paying customers and qualified inquiries.
-                </p>
-              </div>
-
-              <div className="p-5 rounded-2xl bg-[#F8F4FF] border border-[#E9D8FD] hover:border-[#7C3AED] transition-all shadow-xs group">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="p-2.5 rounded-xl bg-white border border-[#E9D8FD] text-[#7C3AED] shadow-2xs group-hover:scale-105 transition-transform">
-                    <Cpu className="w-5 h-5" />
-                  </div>
-                  <h3 className="font-heading text-base font-bold text-[#0F0728]">
-                    Technical SEO Dominance
-                  </h3>
-                </div>
-                <p className="font-sans text-xs sm:text-sm text-[#5B4B7C] font-medium leading-relaxed">
-                  Semantic schemas, Core Web Vitals speed optimization, and top Google search and map pack authority.
-                </p>
-              </div>
-
-            </div>
-
-            {/* Bottom 4-Metric Stats Bar matching Reference */}
-            <div className="p-5 rounded-2xl bg-[#0F0728] text-white border border-[#2D1B4E] grid grid-cols-2 sm:grid-cols-4 gap-4 text-center shadow-lg">
+            {/* Bottom 4-Metric Stats Bar */}
+            <div className="p-6 rounded-2xl bg-[#0F0728] text-white border border-[#2D1B4E] grid grid-cols-2 sm:grid-cols-4 gap-4 text-center shadow-lg">
               <div>
                 <span className="font-heading text-2xl sm:text-3xl font-extrabold text-[#A78BFA] block">3+</span>
                 <span className="font-mono text-[10px] sm:text-xs text-[#C8B8E8] uppercase tracking-wider font-semibold">YEARS EXP.</span>
@@ -133,13 +98,13 @@ export default function About() {
               </div>
             </div>
 
-            {/* Link to Skills */}
-            <div>
+            {/* Link to Problem Solving Solutions */}
+            <div className="pt-2">
               <a
                 href="#skills"
                 className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm font-bold text-[#7C3AED] hover:text-[#6D28D9] tracking-wider uppercase group"
               >
-                <span>Explore All 8 Core Services</span>
+                <span>Explore Problem-Solving Search Solutions</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>

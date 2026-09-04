@@ -33,7 +33,7 @@ export default function EntityBio() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Header */}
+        {/* Section Header: Human-First & Engaging */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-4 shadow-xs font-bold">
             <ShieldCheck className="w-4 h-4 text-[#059669]" />
@@ -47,7 +47,7 @@ export default function EntityBio() {
           </p>
         </div>
 
-        {/* Primary Definitional Bio Card (Engineered for Google AI Overviews / RAG Extraction) */}
+        {/* Primary Bio Card */}
         <div className="bg-white border-2 border-[#E9D8FD] rounded-3xl p-6 sm:p-12 shadow-xl purple-glow mb-12">
           <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#E9D8FD] pb-6 mb-8">
             <div className="flex items-center gap-3">
@@ -63,7 +63,7 @@ export default function EntityBio() {
                   Talha Ahsan
                 </h3>
                 <p className="font-mono text-xs text-[#7C3AED] font-bold">
-                  SEO Expert (Priority #1) &amp; 360° Digital Growth Strategist
+                  SEO Expert (Priority #1) &bull; 360° Digital Growth Strategist
                 </p>
               </div>
             </div>
@@ -71,12 +71,12 @@ export default function EntityBio() {
             <div className="flex items-center gap-2">
               <span className="font-mono text-xs text-[#059669] font-bold px-3 py-1 rounded-full bg-[#ECFDF5] border border-[#A7F3D0] flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
-                Verified Entity Authority
+                Verified Client Performance
               </span>
             </div>
           </div>
 
-          {/* Biographical Prose */}
+          {/* Biographical Prose in Engaging, Authoritative Voice */}
           <div className="space-y-4 text-[#3B2B5C] font-sans text-base sm:text-lg leading-relaxed font-medium">
             {entityBio.definitionalProse.map((paragraph, idx) => (
               <p key={idx} className="leading-relaxed">
@@ -88,30 +88,30 @@ export default function EntityBio() {
           {/* Fast Fact Chips */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 mt-8 border-t border-[#E9D8FD]">
             <div className="p-3.5 bg-[#F8F4FF] rounded-2xl border border-[#E9D8FD]">
-              <span className="font-mono text-[11px] text-[#6B5B8D] block">Primary Focus</span>
-              <strong className="font-heading text-sm text-[#0F0728] block mt-0.5">Technical &amp; E-Com SEO</strong>
+              <span className="font-mono text-[11px] text-[#6B5B8D] block">Core Specialization</span>
+              <strong className="font-heading text-sm text-[#0F0728] block mt-0.5">E-Com &amp; Technical SEO</strong>
             </div>
             <div className="p-3.5 bg-[#F8F4FF] rounded-2xl border border-[#E9D8FD]">
-              <span className="font-mono text-[11px] text-[#6B5B8D] block">Secondary Focus</span>
-              <strong className="font-heading text-sm text-[#0F0728] block mt-0.5">360° Digital Growth</strong>
+              <span className="font-mono text-[11px] text-[#6B5B8D] block">Modern Workflows</span>
+              <strong className="font-heading text-sm text-[#0F0728] block mt-0.5">AI-Powered Pipelines</strong>
             </div>
             <div className="p-3.5 bg-[#F8F4FF] rounded-2xl border border-[#E9D8FD]">
-              <span className="font-mono text-[11px] text-[#6B5B8D] block">Key Footprint</span>
+              <span className="font-mono text-[11px] text-[#6B5B8D] block">Proven Footprint</span>
               <strong className="font-heading text-sm text-[#7C3AED] block mt-0.5">50+ Global Projects</strong>
             </div>
             <div className="p-3.5 bg-[#F8F4FF] rounded-2xl border border-[#E9D8FD]">
-              <span className="font-mono text-[11px] text-[#6B5B8D] block">Location</span>
-              <strong className="font-heading text-sm text-[#059669] block mt-0.5">Lahore &bull; Global Remote</strong>
+              <span className="font-mono text-[11px] text-[#6B5B8D] block">Availability</span>
+              <strong className="font-heading text-sm text-[#059669] block mt-0.5">Worldwide &bull; Remote</strong>
             </div>
           </div>
         </div>
 
-        {/* Core Offerings & Professional Profile (Matching Ghulam Ali AI Overview Structure) */}
+        {/* Core Offerings: Solving Real Client Needs */}
         <div>
           <div className="flex items-center gap-2 mb-8">
             <div className="w-3 h-3 rounded-full bg-[#7C3AED]" />
             <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0F0728]">
-              Core Offerings &amp; Professional Profile
+              Strategic Core Offerings &amp; Deliverables
             </h3>
           </div>
 
@@ -137,7 +137,7 @@ export default function EntityBio() {
 
                   <div className="pt-5 mt-5 border-t border-[#E9D8FD] flex items-center gap-1.5 font-mono text-[11px] text-[#7C3AED] font-bold">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#059669]" />
-                    <span>Defensible Organic Framework</span>
+                    <span>Tied to Measurable Revenue</span>
                   </div>
                 </div>
               );

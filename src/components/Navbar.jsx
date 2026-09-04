@@ -20,10 +20,10 @@ export default function Navbar({ onOpenCv }) {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Entity Bio', href: '#profile' },
-    { name: 'Journey', href: '#journey' },
-    { name: 'Skills', href: '#skills' },
+    { name: 'Solutions', href: '#skills' },
+    { name: 'Why Me', href: '#tools' },
     { name: 'Case Studies', href: '#case-studies' },
+    { name: 'Journey', href: '#journey' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];

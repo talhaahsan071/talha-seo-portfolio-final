@@ -135,9 +135,9 @@ export default function Hero({ onOpenCv }) {
                 <Lock className="w-3.5 h-3.5 text-[#059669] shrink-0" />
                 <span className="text-[#0F0728] font-bold">{personalInfo.domain}</span>
                 <span className="text-[#6B5B8D]">›</span>
-                <span className="text-[#6B5B8D] shrink-0">seo-expert</span>
+                <span className="text-[#3B2B5C] shrink-0 font-semibold">proven-search-growth</span>
                 <span className="text-[#6B5B8D]">›</span>
-                <span className="text-[#7C3AED] shrink-0 font-bold">digital-growth</span>
+                <span className="text-[#059669] shrink-0 font-bold">+280%-revenue-surge</span>
               </div>
 
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3E8FF] border border-[#E9D8FD] font-mono text-[11px] text-[#7C3AED]">

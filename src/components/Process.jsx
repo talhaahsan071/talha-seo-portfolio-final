@@ -23,7 +23,7 @@ export default function Process() {
         <div className="mb-16 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-3 shadow-xs font-bold">
             <span className="w-2 h-2 rounded-full bg-[#7C3AED]" />
-            <span>08 // 5-Stage Growth Methodology</span>
+            <span>HOW WE SCALE: THE 5-STAGE GROWTH SPRINT</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-5xl font-bold text-[#0F0728] leading-tight">
             Systematized Search &amp; Growth Framework
