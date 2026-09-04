@@ -11,9 +11,21 @@ import {
   Download, 
   ArrowRight,
   Sparkles,
-  ShieldCheck
+  ShieldCheck,
+  Mail,
+  MessageSquare
 } from 'lucide-react';
 import { heroSnippet, personalInfo } from '../data/portfolioData';
+
+function LinkedinIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+      <rect x="2" y="9" width="4" height="12"></rect>
+      <circle cx="4" cy="4" r="2"></circle>
+    </svg>
+  );
+}
 
 export default function Hero({ onOpenCv }) {
   const containerVariants = {
@@ -35,6 +47,14 @@ export default function Hero({ onOpenCv }) {
       transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1.0] }
     }
   };
+
+  // Social Pills matching prompt guide (hides empty links)
+  const socialPills = [
+    { label: "LinkedIn", href: personalInfo.linkedin, icon: LinkedinIcon, show: !!personalInfo.linkedin },
+    { label: "WhatsApp", href: personalInfo.whatsapp, icon: MessageSquare, show: !!personalInfo.whatsapp },
+    { label: "Email", href: `mailto:${personalInfo.email}`, icon: Mail, show: !!personalInfo.email },
+    { label: "Google Business (GMB)", href: personalInfo.gmbUrl, icon: MapPin, show: !!personalInfo.gmbUrl }
+  ].filter(item => item.show);
 
   return (
     <section className="relative min-h-[95vh] pt-28 pb-20 overflow-hidden flex items-center justify-center bg-white">
@@ -125,10 +145,10 @@ export default function Hero({ onOpenCv }) {
               </div>
             </motion.div>
 
-            {/* SERP Title */}
+            {/* SERP Title with Fluid Clamp Typography */}
             <motion.div variants={itemVariants} className="mb-4">
               <a href="#about" className="group inline-block focus:outline-none">
-                <h1 className="font-serif text-2xl sm:text-4xl font-bold leading-tight text-[#7C3AED] group-hover:text-[#D946EF] transition-colors duration-200">
+                <h1 className="font-heading text-[clamp(1.65rem,3.4vw,2.5rem)] font-extrabold leading-[1.2] text-[#7C3AED] group-hover:text-[#D946EF] transition-colors duration-200">
                   Talha Ahsan — 360° Digital Marketer &amp; SEO Growth Strategist
                 </h1>
               </a>
@@ -142,7 +162,7 @@ export default function Hero({ onOpenCv }) {
             </motion.div>
 
             {/* Rich Snippet Chips */}
-            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2 sm:gap-3 border-t border-[#E9D8FD] pt-5 mb-8">
+            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2 sm:gap-3 border-t border-[#E9D8FD] pt-5 mb-7">
               
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#0F0728] shadow-xs">
                 <Award className="w-3.5 h-3.5 text-[#7C3AED]" />
@@ -170,7 +190,7 @@ export default function Hero({ onOpenCv }) {
             </motion.div>
 
             {/* Action CTAs */}
-            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4">
+            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3.5 mb-6">
               <a
                 href="#case-studies"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#7C3AED] via-[#8B5CF6] to-[#D946EF] text-white font-mono text-sm font-bold shadow-lg shadow-[#7C3AED]/25 hover:shadow-[#7C3AED]/40 hover:scale-[1.02] transition-all duration-200"
@@ -181,18 +201,38 @@ export default function Hero({ onOpenCv }) {
 
               <a
                 href="#journey"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#F8F4FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] text-[#0F0728] font-mono text-sm font-bold transition-all duration-200 hover:scale-[1.02]"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#F8F4FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] text-[#0F0728] font-mono text-sm font-bold transition-all duration-200 hover:scale-[1.02]"
               >
-                <span>Explore My Journey</span>
+                <span>Career Journey</span>
               </a>
 
               <button
                 onClick={onOpenCv}
-                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-[#F8F4FF] border border-[#E9D8FD] text-[#3B2B5C] font-mono text-sm font-bold transition-all duration-200 hover:scale-[1.02]"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-white hover:bg-[#F8F4FF] border border-[#E9D8FD] text-[#3B2B5C] font-mono text-sm font-bold transition-all duration-200 hover:scale-[1.02]"
               >
                 <Download className="w-4 h-4 text-[#7C3AED]" />
                 <span>CV</span>
               </button>
+            </motion.div>
+
+            {/* Social Pill Row (Prompt Guide Section 1) */}
+            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2 pt-4 border-t border-[#E9D8FD]/70">
+              <span className="font-mono text-[11px] text-[#6B5B8D] font-semibold mr-1">Connect:</span>
+              {socialPills.map((pill, i) => {
+                const Icon = pill.icon;
+                return (
+                  <a
+                    key={i}
+                    href={pill.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F8F4FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] text-[11px] font-mono font-bold text-[#3B2B5C] hover:text-[#7C3AED] transition-colors shadow-2xs"
+                  >
+                    <Icon className="w-3.5 h-3.5 text-[#7C3AED]" />
+                    <span>{pill.label}</span>
+                  </a>
+                );
+              })}
             </motion.div>
           </motion.div>
 
@@ -213,7 +253,7 @@ export default function Hero({ onOpenCv }) {
               {/* Floating Overlay Badge */}
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#E9D8FD] text-[#0F0728] shadow-xl flex items-center justify-between">
                 <div>
-                  <h3 className="font-serif text-lg font-bold text-[#0F0728]">Talha Ahsan</h3>
+                  <h3 className="font-heading text-lg font-bold text-[#0F0728]">Talha Ahsan</h3>
                   <p className="font-mono text-xs text-[#7C3AED] font-bold">360° Marketer &amp; SEO Lead</p>
                 </div>
                 <div className="text-right font-mono text-xs">

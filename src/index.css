@@ -39,6 +39,17 @@ body {
   letter-spacing: -0.01em;
 }
 
+/* Typography & Word Wrap Safety (Prompt Guide Rule) */
+p, h1, h2, h3, h4, h5, h6, span, a, li {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Section Scroll Margin (Prevents Fixed Header from Clipping Section Titles) */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
 h1, h2, h3, h4, .font-heading {
   font-family: 'Plus Jakarta Sans', sans-serif;
   letter-spacing: -0.02em;
@@ -89,6 +100,33 @@ h1, h2, h3, h4, .font-heading {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: drawTrace 2.5s ease-out forwards;
+}
+
+/* CSS-Only Infinite Horizontal Marquee (Prompt Guide Rule) */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 32s linear infinite;
+}
+
+.animate-infinite-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-infinite-marquee {
+    animation: none;
+    overflow-x: auto;
+  }
 }
 
 /* Glassmorphism utilities */

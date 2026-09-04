@@ -38,11 +38,11 @@ export default function CaseStudies() {
         
         {/* Section Header */}
         <div className="mb-12 max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-3 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-3 shadow-xs font-bold">
             <span className="w-2 h-2 rounded-full bg-[#7C3AED]" />
-            <span className="font-bold">04 // Verified Case Studies &amp; Proven ROI</span>
+            <span>04 // Verified Case Studies &amp; Proven ROI</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0F0728] leading-tight">
+          <h2 className="font-heading text-3xl sm:text-5xl font-extrabold text-[#0F0728] leading-tight">
             Data-Backed Search Victories
           </h2>
           <p className="text-[#3B2B5C] text-base mt-3 font-medium">
@@ -76,13 +76,13 @@ export default function CaseStudies() {
 
         {/* Case Study Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {filteredStudies.map((study) => (
+          {filteredStudies.map((study, idx) => (
             <motion.div
               key={study.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, delay: idx * 0.08 }}
               onClick={() => {
                 setSelectedStudy(study);
                 setIsZoomedImage(false);
@@ -104,6 +104,9 @@ export default function CaseStudies() {
                     <div className="absolute top-3 left-3 flex items-center gap-2">
                       <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-[#E9D8FD] font-mono text-[11px] text-[#7C3AED] font-bold shadow-sm flex items-center gap-1">
                         <ShieldCheck className="w-3.5 h-3.5 text-[#059669]" /> Verified Report
+                      </span>
+                      <span className="font-mono text-[10px] uppercase font-bold px-2.5 py-1 rounded-full bg-[#0F0728]/80 text-white backdrop-blur-md">
+                        CASE 0{idx + 1}
                       </span>
                     </div>
 
@@ -131,7 +134,7 @@ export default function CaseStudies() {
                   {/* Metric Headline Row with Sparkline SVG */}
                   <div className="flex items-center justify-between border-b border-[#E9D8FD] pb-5 mb-5">
                     <div>
-                      <span className="font-serif text-2xl sm:text-3xl font-bold text-[#7C3AED] group-hover:text-[#D946EF] transition-colors">
+                      <span className="font-heading text-2xl sm:text-3xl font-extrabold text-[#7C3AED] group-hover:text-[#D946EF] transition-colors">
                         {study.metric}
                       </span>
                       <p className="font-mono text-xs text-[#0F0728] font-bold mt-1">
@@ -143,7 +146,7 @@ export default function CaseStudies() {
                     <div className="w-24 h-12 flex items-center justify-center p-1.5 bg-white border border-[#E9D8FD] rounded-xl shadow-xs">
                       <svg className="w-full h-full overflow-visible" viewBox="0 0 100 40">
                         <path
-                          d={`M 0 ${40 - (study.sparkline[0] * 0.22)} L ${study.sparkline.map((val, idx) => `${(idx / (study.sparkline.length - 1)) * 100} ${40 - (val * 0.22)}`).join(' L ')}`}
+                          d={`M 0 ${40 - (study.sparkline[0] * 0.22)} L ${study.sparkline.map((val, i) => `${(i / (study.sparkline.length - 1)) * 100} ${40 - (val * 0.22)}`).join(' L ')}`}
                           fill="none"
                           stroke="#059669"
                           strokeWidth="2.5"
@@ -155,7 +158,7 @@ export default function CaseStudies() {
                   </div>
 
                   {/* Client Name & Location */}
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0F0728] mb-1">
+                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0F0728] mb-1">
                     {study.client}
                   </h3>
                   <p className="font-mono text-xs text-[#7C3AED] mb-3 flex items-center gap-1 font-bold">
@@ -172,8 +175,8 @@ export default function CaseStudies() {
               {/* Card Footer tags & action */}
               <div className="p-6 sm:p-8 pt-0 border-t border-[#E9D8FD] space-y-3">
                 <div className="flex flex-wrap gap-1.5 font-mono text-[10px] pt-4">
-                  {study.tags.map((tag, idx) => (
-                    <span key={idx} className="px-2.5 py-1 rounded-lg bg-white text-[#3B2B5C] border border-[#E9D8FD] font-bold shadow-2xs">
+                  {study.tags.map((tag, tIdx) => (
+                    <span key={tIdx} className="px-2.5 py-1 rounded-lg bg-white text-[#3B2B5C] border border-[#E9D8FD] font-bold shadow-2xs">
                       #{tag}
                     </span>
                   ))}
@@ -209,7 +212,7 @@ export default function CaseStudies() {
                       <ShieldCheck className="w-3.5 h-3.5 text-[#059669]" />
                       <span>{selectedStudy.category}</span>
                     </div>
-                    <h3 className="font-serif text-2xl sm:text-4xl font-bold text-[#0F0728] mt-1">{selectedStudy.client}</h3>
+                    <h3 className="font-heading text-2xl sm:text-4xl font-extrabold text-[#0F0728] mt-1">{selectedStudy.client}</h3>
                     <p className="font-mono text-xs text-[#6B5B8D] mt-1 flex items-center gap-1.5">
                       <Lock className="w-3.5 h-3.5 text-[#059669]" />
                       <span className="font-bold text-[#0F0728]">{selectedStudy.url}</span>
@@ -228,7 +231,7 @@ export default function CaseStudies() {
                 <div className="bg-gradient-to-r from-[#F8F4FF] via-white to-[#F8F4FF] border border-[#E9D8FD] rounded-2xl p-6 mb-8 flex flex-wrap items-center justify-between gap-4 shadow-sm">
                   <div>
                     <span className="font-mono text-xs text-[#6B5B8D] font-bold uppercase tracking-wider">Headline Outcome:</span>
-                    <p className="font-serif text-3xl sm:text-4xl font-bold text-[#7C3AED] mt-0.5">{selectedStudy.metric}</p>
+                    <p className="font-heading text-3xl sm:text-4xl font-extrabold text-[#7C3AED] mt-0.5">{selectedStudy.metric}</p>
                     <p className="font-mono text-xs text-[#0F0728] font-bold mt-1">{selectedStudy.metricLabel}</p>
                   </div>
                   <div className="px-4 py-2 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] font-mono text-xs font-bold shadow-xs">
@@ -307,8 +310,8 @@ export default function CaseStudies() {
                     Verified Outcomes &amp; Growth Deliverables
                   </h4>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-[#0F0728] font-medium">
-                    {selectedStudy.results.map((res, idx) => (
-                      <li key={idx} className="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-[#E9D8FD] shadow-2xs">
+                    {selectedStudy.results.map((res, i) => (
+                      <li key={i} className="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-[#E9D8FD] shadow-2xs">
                         <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0 mt-0.5" />
                         <span>{res}</span>
                       </li>
