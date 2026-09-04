@@ -29,7 +29,6 @@ export const personalInfo = {
 };
 
 export const heroSnippet = {
-  breadcrumb: "talhaahsan.vercel.app › proven-search-growth › +280%-revenue-surge",
   title: "SEO Expert Helping Businesses Grow Organic Traffic, Rankings & Revenue.",
   snippet: "I specialize in Technical SEO, E-Commerce SEO, Google Maps Local Domination, and AI-powered SEO workflows—turning websites into predictable, high-margin organic growth channels.",
   credibility: "SEO Expert @ Delenzo Technologies · 2+ Years International Freelance · Pakistan & Global",
