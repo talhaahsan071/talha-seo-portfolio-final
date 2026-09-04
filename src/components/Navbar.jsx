@@ -22,8 +22,9 @@ export default function Navbar({ onOpenCv }) {
     { name: 'About', href: '#about' },
     { name: 'Solutions', href: '#skills' },
     { name: 'Why Me', href: '#tools' },
+    { name: 'AI Lab', href: '#ai-lab' },
     { name: 'Case Studies', href: '#case-studies' },
-    { name: 'Journey', href: '#journey' },
+    { name: 'Insights', href: '#insights' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];

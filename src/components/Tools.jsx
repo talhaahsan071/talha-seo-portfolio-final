@@ -7,16 +7,27 @@ import {
   Users, 
   ShieldCheck, 
   CheckCircle2, 
-  Zap,
-  Target
+  Zap, 
+  Target,
+  Layers,
+  Cpu,
+  ShoppingBag,
+  Terminal
 } from 'lucide-react';
-import { top1PercentAdvantage } from '../data/portfolioData';
+import { top1PercentAdvantage, seoStackCategories } from '../data/portfolioData';
 
-const iconMap = [
+const advantageIcons = [
   Search,
   Zap,
   TrendingUp,
   Users
+];
+
+const categoryIcons = [
+  Search,
+  Cpu,
+  ShoppingBag,
+  Terminal
 ];
 
 export default function Tools() {
@@ -44,9 +55,9 @@ export default function Tools() {
         </div>
 
         {/* 4 Top-1% Strategic Advantage Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {top1PercentAdvantage.map((adv, idx) => {
-            const Icon = iconMap[idx] || Sparkles;
+            const Icon = advantageIcons[idx] || Sparkles;
 
             return (
               <motion.div
@@ -103,28 +114,58 @@ export default function Tools() {
           })}
         </div>
 
-        {/* Bottom Proof Assurance Box */}
-        <div className="mt-12 p-6 rounded-3xl bg-white border border-[#E9D8FD] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] flex items-center justify-center text-[#059669]">
-              <ShieldCheck className="w-5 h-5" />
+        {/* Categorized SEO Stack (Organized by Purpose) */}
+        <div className="pt-10 border-t border-[#E9D8FD]">
+          <div className="mb-10 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-2 font-bold">
+              <Layers className="w-3.5 h-3.5 text-[#7C3AED]" />
+              <span>THE SPECIALIZED SEO TOOLKIT</span>
             </div>
-            <div>
-              <h4 className="font-heading text-sm sm:text-base font-bold text-[#0F0728]">
-                Proven Across 50+ Projects in 8+ Industries
-              </h4>
-              <p className="font-sans text-xs text-[#6B5B8D] font-medium">
-                From national retail giants to international corporate legal firms, every client gets custom strategic execution.
-              </p>
-            </div>
+            <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0F0728]">
+              Tools Organized by Strategic Purpose
+            </h3>
+            <p className="text-sm text-[#4A3B69] font-medium mt-1">
+              Every tool in my stack serves an exact function—from deep crawl log inspection to modern AI intent clustering.
+            </p>
           </div>
 
-          <a
-            href="#case-studies"
-            className="px-5 py-2.5 rounded-xl bg-[#F8F4FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] text-[#7C3AED] font-mono text-xs font-bold transition-all shrink-0"
-          >
-            Inspect Client Results &rarr;
-          </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {seoStackCategories.map((cat, cIdx) => {
+              const CategoryIcon = categoryIcons[cIdx] || Layers;
+              return (
+                <div
+                  key={cIdx}
+                  className="bg-white border border-[#E9D8FD] rounded-3xl p-6 shadow-xs flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="w-10 h-10 rounded-xl bg-[#F8F4FF] border border-[#E9D8FD] flex items-center justify-center text-[#7C3AED] mb-4">
+                      <CategoryIcon className="w-5 h-5" />
+                    </div>
+
+                    <h4 className="font-heading text-base font-bold text-[#0F0728] mb-1.5">
+                      {cat.category}
+                    </h4>
+                    <p className="font-sans text-xs text-[#6B5B8D] font-medium mb-4 leading-relaxed">
+                      {cat.description}
+                    </p>
+
+                    <div className="space-y-3 pt-3 border-t border-[#E9D8FD]">
+                      {cat.tools.map((t, tIdx) => (
+                        <div key={tIdx}>
+                          <span className="font-mono text-xs font-bold text-[#0F0728] block">
+                            {t.name}
+                          </span>
+                          <span className="font-sans text-[11px] text-[#5B4B7C] block leading-snug">
+                            {t.role}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
       </div>

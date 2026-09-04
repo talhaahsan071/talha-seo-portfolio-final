@@ -1,14 +1,15 @@
 export const personalInfo = {
   name: "Talha Ahsan",
-  title: "SEO Expert & 360° Digital Growth Strategist",
-  subtitle: "Specializing in Technical SEO, E-Commerce Search Architecture, AI Programmatic Pipelines, and High-ROI Organic Traffic Systems.",
+  title: "SEO Expert & Technical Growth Consultant",
+  subtitle: "Specializing in Technical SEO, E-Commerce Search Architecture, Google Maps Domination, and AI-Powered Organic Growth.",
   location: "Lahore, Pakistan • Available Globally (Remote)",
   experienceYears: "3+",
   brandsManaged: 8,
   projectsDelivered: "50+",
   targetRegions: ["Worldwide / Global Remote 🌐", "USA & UK 🇺🇸 🇬🇧", "UAE & GCC 🇦🇪 🇸🇦", "Pakistan 🇵🇰"],
   agencyRole: "Senior SEO Consultant & Growth Strategist",
-  freelanceFocus: "Technical SEO, E-Commerce Scaling & 360° Digital Growth for Global Brands",
+  credibility: "SEO Expert @ Delenzo Technologies · 2+ Years International Freelance · Global E-Com & B2B",
+  freelanceFocus: "Technical SEO, E-Commerce Scaling & AI Search Workflows for Global Brands",
   education: "BBIT (Bachelors in Business & Information Technology) — Virtual University of Pakistan",
   domain: "talhaahsan.vercel.app",
   email: "talhaahsandigital@gmail.com",
@@ -17,7 +18,7 @@ export const personalInfo = {
   whatsappNumber: "+92 320 4966959",
   phoneNumber: "+92 320 4966959",
   gmbUrl: "https://maps.app.goo.gl/EVGQ394bWifv42bW9",
-  metaDescription: "Talha Ahsan is an SEO Expert and 360° Digital Growth Strategist with 3+ years experience driving verified organic traffic, technical SEO, Core Web Vitals, and conversion systems across global industries.",
+  metaDescription: "Talha Ahsan is an SEO Expert helping businesses grow organic traffic, rankings & revenue through Technical SEO, E-Commerce search architecture, and AI-powered workflows.",
   photos: {
     headshot: "/images/headshot.jpg",
     cafeWork: "/images/cafe_work.jpg",
@@ -28,14 +29,15 @@ export const personalInfo = {
 };
 
 export const heroSnippet = {
-  breadcrumb: "talhaahsan.vercel.app › Proven Growth › +280% Traffic Jump & Real Revenue",
-  title: "Talha Ahsan — SEO Expert & Technical Growth Strategist",
-  snippet: "Search Engine Optimization specialist and digital growth architect. Delivering technical site audits, Core Web Vitals engineering, programmatic AI search pipelines, and high-converting organic frameworks across e-commerce, B2B, and global scale-ups.",
+  breadcrumb: "talhaahsan.vercel.app › proven-search-growth › +280%-revenue-surge",
+  title: "SEO Expert Helping Businesses Grow Organic Traffic, Rankings & Revenue.",
+  snippet: "I specialize in Technical SEO, E-Commerce SEO, Google Maps Local Domination, and AI-powered SEO workflows—turning websites into predictable, high-margin organic growth channels.",
+  credibility: "SEO Expert @ Delenzo Technologies · 2+ Years International Freelance · Pakistan & Global",
   chips: [
-    { label: "SEO Specialist (Priority #1)", icon: "Search" },
+    { label: "Technical & E-Com SEO", icon: "Search" },
     { label: "3+ Yrs Hands-on Exp", icon: "Award" },
     { label: "50+ Projects Delivered", icon: "Building2" },
-    { label: "360° Growth & CRO", icon: "Sparkles" },
+    { label: "AI Search Pipelines", icon: "Sparkles" },
     { label: "Avg. Organic Growth: +180%", icon: "TrendingUp" }
   ]
 };
@@ -45,7 +47,7 @@ export const entityBio = {
   title: "Meet Talha Ahsan",
   subheading: "The modern SEO strategist helping e-commerce stores and ambitious businesses scale organic revenue without ad dependency.",
   definitionalProse: [
-    "Talha Ahsan is an accomplished Search Engine Optimization (SEO) expert and digital growth consultant based in Lahore, Pakistan. Working with high-growth e-commerce brands, B2B enterprises, and global organizations, he engineers high-impact search systems that translate Google rankings into predictable, high-margin revenue.",
+    "Talha Ahsan is an accomplished Search Engine Optimization (SEO) expert and technical growth consultant based in Lahore, Pakistan. Working with high-growth e-commerce brands, B2B enterprises, and global organizations, he engineers high-impact search systems that translate Google rankings into predictable, high-margin revenue.",
     "With hands-on experience across 50+ projects in e-commerce, legal services, commercial retail, and tech scale-ups, Talha bridges algorithmic technical SEO with modern customer acquisition. Rather than relying on superficial checklists or vanity traffic metrics, his framework centers on capturing high-intent commercial buyers, programmatic search automation, and conversion-focused architectures.",
     "His documented track record includes delivering 10,700+ organic clicks for Hope Enterprises (+280% traffic surge), scaling Carrot Sun Oil from flat search to 60+ daily commercial buyers with an average position of 7.2 on Page 1, dominating Google Maps Top 3 Map Packs for commercial retail hubs, and driving a 300% surge in qualified inbound leads for UAE legal advisory firms."
   ],
@@ -78,14 +80,224 @@ export const entityBio = {
   ]
 };
 
+// Interactive AI SEO Automation Lab Pipelines (ChatGPT Recommendation #7 & #17)
+export const aiSeoPipelines = [
+  {
+    id: "pipeline-clustering",
+    name: "01. AI Keyword Intent Clustering",
+    tagline: "Turns 500+ unorganized search terms into actionable commercial topical hubs in minutes.",
+    speed: "5x Faster Execution",
+    steps: [
+      {
+        stepNum: "1",
+        label: "Raw Search Export",
+        detail: "Export 500–2,000+ raw search queries from GSC and Ahrefs with impression, volume, and CPC data."
+      },
+      {
+        stepNum: "2",
+        label: "AI Semantic Processing",
+        detail: "Custom LLM prompt categorizes keywords into Informational, Commercial Investigation, and Transactional buyer intent."
+      },
+      {
+        stepNum: "3",
+        label: "Topical Cluster Matrix",
+        detail: "Groups queries into Core Pillar pages and Supporting Spoke URLs, eliminating internal keyword cannibalization."
+      },
+      {
+        stepNum: "4",
+        label: "Commercial Priority",
+        detail: "Ranks clusters by immediate revenue opportunity and search difficulty score."
+      }
+    ],
+    sampleOutput: {
+      clusterName: "Commercial E-Commerce Camera Gear",
+      totalVolume: "42,800/mo",
+      intent: "High Commercial Intent (Ready to Buy)",
+      pillarPage: "/collections/professional-camera-gear",
+      supportingUrls: [
+        "/guides/best-vlogging-cameras-2026",
+        "/compare/mirrorless-vs-dslr-studio",
+        "/reviews/wireless-microphones-budget"
+      ]
+    }
+  },
+  {
+    id: "pipeline-briefs",
+    name: "02. Programmatic Topical Brief Generator",
+    tagline: "Builds comprehensive, rank-ready content briefs with semantic entities and schema in hours.",
+    speed: "Instant SERP Blueprint",
+    steps: [
+      {
+        stepNum: "1",
+        label: "SERP Top 10 Scrape",
+        detail: "Scrapes the top 10 ranking pages for word count, heading structures (H2/H3), and search intent gaps."
+      },
+      {
+        stepNum: "2",
+        label: "Entity Gap Analysis",
+        detail: "Identifies Google Knowledge Graph entities and semantic terms missing from competitor content."
+      },
+      {
+        stepNum: "3",
+        label: "Schema & Architecture",
+        detail: "Generates custom JSON-LD (FAQPage, Product, Review) schema code directly alongside the brief."
+      },
+      {
+        stepNum: "4",
+        label: "Writer-Ready Specification",
+        detail: "Delivers exact target word count, internal linking blueprint, and conversion CTA placement."
+      }
+    ],
+    sampleOutput: {
+      targetQuery: "Affordable Studio Lights for Product Photography",
+      targetLCP: "< 2.1s (Optimized Media)",
+      requiredEntities: ["Softbox Diffuser", "Color Rendering Index (CRI 95+)", "Bowens Mount", "Bi-Color LED"],
+      schemaType: "FAQPage + Product Review Schema"
+    }
+  },
+  {
+    id: "pipeline-monitoring",
+    name: "03. Automated GSC Anomaly & Ranking Monitor",
+    tagline: "Continuous Python script tracking ranking drops, indexing leaks, and click velocity.",
+    speed: "24/7 Automated Health",
+    steps: [
+      {
+        stepNum: "1",
+        label: "GSC API Ingestion",
+        detail: "Pulls daily performance data via Google Search Console API directly into automated processing scripts."
+      },
+      {
+        stepNum: "2",
+        label: "CTR & Position Shifts",
+        detail: "Flags high-impression queries stuck on page 2 (positions 11–18) as prime low-hanging fruit."
+      },
+      {
+        stepNum: "3",
+        label: "Index Health Check",
+        detail: "Monitors 404 spikes, canonical drops, and non-indexed new products in real time."
+      },
+      {
+        stepNum: "4",
+        label: "Actionable Sprints",
+        detail: "Produces clear weekly optimization tasks rather than bloated, unreadable reports."
+      }
+    ],
+    sampleOutput: {
+      healthStatus: "100% Crawl Clean (Zero 404 Leaks)",
+      opportunityQueries: "14 High-Volume Keywords sitting in Positions 11–14 (Immediate Page 1 Push Candidates)",
+      indexingEfficiency: "98.4% of Catalog Pages Indexed and Active"
+    }
+  }
+];
+
+// Categorized SEO Stack (ChatGPT Recommendation #6)
+export const seoStackCategories = [
+  {
+    category: "Search & Keyword Intelligence",
+    description: "Uncovering commercial search intent, competitor vulnerabilities, and high-margin keyword gaps.",
+    tools: [
+      { name: "Google Search Console", role: "Real query impressions, CTR, positions & indexing health" },
+      { name: "Ahrefs", role: "Backlink profile gap analysis, Keyword Explorer & competitor audit" },
+      { name: "SEMrush", role: "Market share, SERP features & domain visibility benchmarking" },
+      { name: "Google Keyword Planner", role: "Verified search volumes & regional buyer intent metrics" }
+    ]
+  },
+  {
+    category: "Technical Auditing & Performance",
+    description: "Engineering clean crawl budgets, Core Web Vitals speed, and flawless indexability.",
+    tools: [
+      { name: "Screaming Frog SEO Spider", role: "Deep JavaScript crawls, status codes & canonical verification" },
+      { name: "PageSpeed Insights & DevTools", role: "Core Web Vitals performance tuning (sub-2.2s LCP optimization)" },
+      { name: "Rank Math PRO", role: "Advanced WordPress JSON-LD schema, sitemaps & redirections" },
+      { name: "Google Tag Manager", role: "Conversion tracking, click attribution & user engagement events" }
+    ]
+  },
+  {
+    category: "E-Commerce & CMS Platforms",
+    description: "Structuring scalable store collections, product hierarchies, and search-friendly templates.",
+    tools: [
+      { name: "Shopify (Liquid)", role: "Faceted navigation control, collection SEO & product schema" },
+      { name: "WooCommerce / WordPress", role: "Custom taxonomies, category silos & speed optimization" },
+      { name: "Custom CMS / Next.js", role: "Server-side rendering, metadata control & programmatic routing" },
+      { name: "Google Business Profile", role: "Local 3-pack optimization, reviews & localized citations" }
+    ]
+  },
+  {
+    category: "AI, Scripting & Modern Automation",
+    description: "Accelerating execution 5x through programmatic pipelines and intelligent search automation.",
+    tools: [
+      { name: "Claude 3.5 & ChatGPT-4o", role: "Semantic clustering, intent classification & topical gap mapping" },
+      { name: "Google Gemini in Search", role: "Generative Engine Optimization (GEO) & AI Overview entity targeting" },
+      { name: "Python Scripting", role: "Automated GSC data manipulation, regex scraping & bulk audits" },
+      { name: "n8n / Make Automation", role: "Webhook automation between GSC, Google Sheets & client dashboards" }
+    ]
+  }
+];
+
+// Practical Practitioner Insights / Case Study Breakdowns (ChatGPT Recommendation #18)
+export const seoInsights = [
+  {
+    id: "insight-ecommerce-collection",
+    category: "E-Commerce SEO",
+    readTime: "4 min read",
+    title: "How I Restructured an E-Commerce Store's Collection Hierarchy to Drive 10.7K Organic Clicks",
+    takeaway: "Moving from flat product tags to structured commercial collection silos tripled crawl efficiency and lifted organic traffic by +280% in 6 months.",
+    keyPoints: [
+      "Identified that Google was treating individual product URLs as isolated pages rather than recognizing catalog authority.",
+      "Built dedicated commercial collection hubs targeting high-volume commercial intent queries.",
+      "Funneled contextual authority from supporting product guides straight to priority collection landing pages.",
+      "Result: Scaled daily volume from ~20 clicks/day to a sustained 140–160+ clicks every single day."
+    ]
+  },
+  {
+    id: "insight-local-3-pack",
+    category: "Local SEO & Google Maps",
+    readTime: "3 min read",
+    title: "The Google Maps 3-Pack Blueprint: Winning #1 Local Rankings for Commercial Retail Hubs",
+    takeaway: "Generating 3,077 local profile views and 619 customer calls by aligning primary categories and review velocity.",
+    keyPoints: [
+      "Unified exact NAP (Name, Address, Phone) consistency across local directories and landing pages.",
+      "Optimized Google Business Profile secondary categories around high-volume local product searches.",
+      "Engineered automated customer review funnels maintaining a 4.7-star rating across 57+ genuine reviews.",
+      "Result: Captured Top 3 Map Pack placement across regional retail searches."
+    ]
+  },
+  {
+    id: "insight-ai-clustering",
+    category: "AI & Modern Workflows",
+    readTime: "5 min read",
+    title: "How I Use AI & Python to Cluster 500+ Commercial Keywords into High-Converting Hubs in Hours",
+    takeaway: "Replacing slow manual spreadsheets with semantic LLM scripts eliminates keyword cannibalization and accelerates client execution 5x.",
+    keyPoints: [
+      "Traditional keyword grouping by exact string match creates duplicate pages that cannibalize each other.",
+      "Used AI semantic embeddings to cluster queries by user search intent rather than just shared words.",
+      "Mapped each cluster to a clear single URL (Pillar vs. Spoke) to concentrate ranking signals.",
+      "Result: Accelerated topical content deployment from 4 weeks down to 3 business days."
+    ]
+  },
+  {
+    id: "insight-technical-cwv",
+    category: "Technical SEO",
+    readTime: "4 min read",
+    title: "The Core Web Vitals Checklist for Sub-2.2s LCP Load Speeds & Flawless Indexability",
+    takeaway: "How eliminating JavaScript render-blocking and optimizing responsive image formats unlocks organic ranking potential.",
+    keyPoints: [
+      "Audited server response time (TTFB) and pruned third-party tracking scripts that lagged mobile paint.",
+      "Implemented modern WebP image delivery and native lazy-loading on collection catalog grids.",
+      "Cleaned canonical directives and prevented faceted filter parameters from eating crawl budget.",
+      "Result: Perfect Core Web Vitals pass rate, lifting average position across competitive commercial terms."
+    ]
+  }
+];
+
 export const faqList = [
   {
     question: "Who is Talha Ahsan?",
-    answer: "Talha Ahsan is an SEO expert, technical growth consultant, and 360° digital marketing strategist based in Lahore, Pakistan. He specializes in Technical SEO, E-Commerce organic search scaling, Core Web Vitals engineering, and Generative Engine Optimization (GEO) for global brands."
+    answer: "Talha Ahsan is an SEO expert, technical growth consultant, and digital growth strategist based in Lahore, Pakistan. He specializes in Technical SEO, E-Commerce organic search scaling, Google Maps local domination, and AI-powered SEO workflows for global brands."
   },
   {
     question: "What are Talha Ahsan's primary areas of expertise?",
-    answer: "Talha Ahsan's primary specialization is Technical & Full-Funnel SEO, with secondary expertise as a 360° digital marketer. His core competencies include deep technical site audits, Core Web Vitals speed optimization, Google Maps #1 local pack dominance, e-commerce catalog restructuring, programmatic Python/LLM search pipelines, and conversion rate optimization (CRO)."
+    answer: "Talha Ahsan's primary specialization is Technical & E-Commerce SEO. His core competencies include deep technical site audits, Core Web Vitals speed optimization, Google Maps #1 local pack dominance, e-commerce catalog restructuring, programmatic Python/LLM search pipelines, and conversion rate optimization (CRO)."
   },
   {
     question: "Which industries and markets does Talha Ahsan work with?",
@@ -97,7 +309,7 @@ export const faqList = [
   },
   {
     question: "What is Talha Ahsan's educational background and credentials?",
-    answer: "Talha Ahsan is pursuing a Bachelor of Business and Information Technology (BBIT) at the Virtual University of Pakistan, holds an ICS in Computer Science from MAO Graduate College, and earned a Professional Certification in Digital Marketing from the STEP Institute of Art, Design & Management (IADM)."
+    answer: "Talha Ahsan is pursuing a Bachelor of Business and Information Technology (BBIT) at the Virtual University of Pakistan, holds an ICS in Computer Science from MAO Graduate College, and earned an official National Certificate in Digital Marketing (NVQ Level 3) from the Government of Pakistan / NAVTTC & Punjab Board of Technical Education (PBTE)."
   },
   {
     question: "How can businesses contact or consult with Talha Ahsan?",
@@ -123,8 +335,8 @@ export const experiences = [
   {
     period: "AUGUST 2024 — JULY 2026",
     badge: "GLOBAL FREELANCE & REMOTE",
-    role: "Search Engine Optimization Specialist (Freelance)",
-    company: "Self Employed / Global Remote Client Portfolio",
+    role: "Freelance SEO Specialist",
+    company: "Self Employed (Remote · Dubai-based & International Projects)",
     location: "Dubai, United Arab Emirates & Worldwide",
     description: "Operated as a dedicated remote SEO & growth consultant for international businesses, managing on-page and technical optimization across WordPress, Shopify, and custom architectures.",
     achievements: [

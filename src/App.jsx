@@ -7,7 +7,9 @@ import EntityBio from './components/EntityBio';
 import Journey from './components/Journey';
 import Skills from './components/Skills';
 import Tools from './components/Tools';
+import AiSeoLab from './components/AiSeoLab';
 import CaseStudies from './components/CaseStudies';
+import SeoInsights from './components/SeoInsights';
 import LiveSerpTool from './components/LiveSerpTool';
 import Certifications from './components/Certifications';
 import Process from './components/Process';
@@ -44,31 +46,37 @@ export default function App() {
         {/* 04. Official Entity Profile & Knowledge Hub (Engineered for Google AI Overviews) */}
         <EntityBio />
 
-        {/* 05. My Journey Timeline */}
-        <Journey />
-
-        {/* 06. Technical SEO & 360° Digital Marketing Skills */}
+        {/* 05. Problem-Solving SEO Services */}
         <Skills />
 
-        {/* 07. Tool Stack & Architecture */}
+        {/* 06. The Top 1% SEO Advantage & Stack */}
         <Tools />
+
+        {/* 07. Interactive AI SEO Automation Lab */}
+        <AiSeoLab />
 
         {/* 08. Verified Case Studies with GSC Proof */}
         <CaseStudies />
 
-        {/* 09. Interactive Live SERP & SEO Diagnostic Simulator */}
+        {/* 09. Practitioner Playbooks & SEO Insights */}
+        <SeoInsights />
+
+        {/* 10. Interactive Live SERP & SEO Diagnostic Simulator */}
         <LiveSerpTool />
 
-        {/* 10. Certifications & Academic Credentials */}
+        {/* 11. Career Progression Timeline */}
+        <Journey />
+
+        {/* 12. Certifications & Academic Credentials */}
         <Certifications />
 
-        {/* 11. 5-Stage Methodology Process */}
+        {/* 13. 5-Stage Methodology Process */}
         <Process />
 
-        {/* 12. Regional & Enterprise Trust Brands (Infinite Marquee) */}
+        {/* 14. Regional & Enterprise Trust Brands */}
         <Testimonials />
 
-        {/* 13. Frequently Asked Questions & AI Overviews Directory */}
+        {/* 15. Frequently Asked Questions & AI Overviews Directory */}
         <FaqSection />
 
         {/* 14. Action Banner */}

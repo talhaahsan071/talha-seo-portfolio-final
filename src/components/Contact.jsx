@@ -29,13 +29,25 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    projectType: '360-growth',
+    website: '',
+    services: ['ecommerce-seo'],
     budget: '1k-3k',
     message: ''
   });
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const toggleService = (id) => {
+    setFormData(prev => {
+      const exists = prev.services.includes(id);
+      if (exists) {
+        return { ...prev, services: prev.services.filter(s => s !== id) };
+      } else {
+        return { ...prev, services: [...prev.services, id] };
+      }
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -65,13 +77,13 @@ export default function Contact() {
         <div className="mb-14 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-3 shadow-xs font-bold">
             <span className="w-2 h-2 rounded-full bg-[#7C3AED]" />
-            <span>07 // Contact &amp; Consultation</span>
+            <span>Direct Organic Growth Consultation</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0F0728] leading-tight">
-            Start a Digital Growth Consultation
+            Let's Grow Your Organic Traffic, Rankings &amp; Revenue
           </h2>
           <p className="text-[#3B2B5C] text-base mt-3 font-medium">
-            Reach out directly for 360° digital marketing strategies, full-funnel SEO sprints, or a tailored technical health audit.
+            Reach out directly for an in-depth organic search roadmap, technical SEO audit, or ongoing monthly retainer. Expect a direct, senior-level response within 24 hours.
           </p>
         </div>
 
@@ -163,17 +175,17 @@ export default function Contact() {
               <div className="border-t border-[#E9D8FD] pt-6 space-y-3 font-mono text-xs text-[#3B2B5C]">
                 <div className="flex items-center gap-2 text-[#059669] font-bold">
                   <Globe className="w-4 h-4" />
-                  <span>Global Remote Client Availability</span>
+                  <span>Global Remote &amp; UAE / GCC Ready</span>
                 </div>
                 <p className="text-[#6B5B8D] leading-relaxed font-medium">
-                  Available for partners and enterprises across the USA, UK, UAE, Pakistan, and worldwide across all commercial industries.
+                  Direct engagement for high-growth brands and enterprise clients across UAE, USA, UK, Pakistan, and worldwide.
                 </p>
               </div>
             </div>
 
           </div>
 
-          {/* Right Column: Contact Inquiry Form (7 cols) */}
+          {/* Right Column: Consultant Inquiry Form (7 cols) */}
           <div className="lg:col-span-7 bg-[#F8F4FF] border border-[#E9D8FD] rounded-3xl p-6 sm:p-8 shadow-lg">
             {submitted ? (
               <motion.div 
@@ -184,14 +196,14 @@ export default function Contact() {
                 <div className="w-16 h-16 rounded-2xl bg-[#ECFDF5] border border-[#A7F3D0] flex items-center justify-center text-[#059669] mx-auto shadow-md">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3 className="font-serif text-2xl font-bold text-[#0F0728]">Inquiry Received!</h3>
+                <h3 className="font-serif text-2xl font-bold text-[#0F0728]">Audit &amp; Proposal Request Received!</h3>
                 <p className="font-sans text-sm text-[#3B2B5C] font-medium max-w-md mx-auto">
-                  Thank you, <strong className="text-[#0F0728]">{formData.name}</strong>. Talha will review your project parameters and respond directly to <strong className="text-[#7C3AED]">{formData.email}</strong> within 24 hours.
+                  Thank you, <strong className="text-[#0F0728]">{formData.name}</strong>. Talha will review <strong className="text-[#7C3AED]">{formData.website || 'your website'}</strong> and respond directly to <strong className="text-[#7C3AED]">{formData.email}</strong> within 24 hours with an actionable roadmap.
                 </p>
                 <button
                   onClick={() => {
                     setSubmitted(false);
-                    setFormData({ name: '', email: '', projectType: '360-growth', budget: '1k-3k', message: '' });
+                    setFormData({ name: '', email: '', website: '', services: ['ecommerce-seo'], budget: '1k-3k', message: '' });
                   }}
                   className="px-5 py-2.5 bg-white border border-[#E9D8FD] rounded-xl font-mono text-xs font-bold text-[#3B2B5C] hover:text-[#7C3AED]"
                 >
@@ -200,12 +212,15 @@ export default function Contact() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <h3 className="font-serif text-xl font-bold text-[#0F0728]">Project Inquiry Form</h3>
+                <div>
+                  <h3 className="font-serif text-xl font-bold text-[#0F0728]">Request an SEO Growth Proposal</h3>
+                  <p className="text-xs font-mono text-[#6B5B8D] mt-1">Select your requirements and provide your website for custom analysis.</p>
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block font-mono text-xs text-[#3B2B5C] mb-2 font-bold">
-                      Your Name / Company *
+                      Your Name / Brand *
                     </label>
                     <input
                       type="text"
@@ -226,7 +241,7 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="alex@company.com"
+                      placeholder="alex@brand.com"
                       className="w-full px-4 py-3 bg-white border border-[#E9D8FD] focus:border-[#7C3AED] rounded-xl font-sans text-sm text-[#0F0728] font-semibold placeholder-[#6B5B8D] focus:outline-none transition-colors"
                     />
                   </div>
@@ -235,24 +250,21 @@ export default function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block font-mono text-xs text-[#3B2B5C] mb-2 font-bold">
-                      Primary Service Needed:
+                      Website URL (Domain) *
                     </label>
-                    <select
-                      value={formData.projectType}
-                      onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                      className="w-full px-4 py-3 bg-white border border-[#E9D8FD] focus:border-[#7C3AED] rounded-xl font-mono text-xs text-[#0F0728] font-bold focus:outline-none"
-                    >
-                      <option value="360-growth">360° Digital Marketing &amp; Growth</option>
-                      <option value="technical-audit">Full Technical &amp; Crawl SEO Audit</option>
-                      <option value="ecommerce-growth">E-Commerce Search &amp; CRO Strategy</option>
-                      <option value="google-maps">Google Maps (GBP) #1 Local Pack</option>
-                      <option value="monthly-retainer">Monthly Retainer Growth Consultancy</option>
-                    </select>
+                    <input
+                      type="text"
+                      required
+                      value={formData.website}
+                      onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                      placeholder="e.g. yourstore.com"
+                      className="w-full px-4 py-3 bg-white border border-[#E9D8FD] focus:border-[#7C3AED] rounded-xl font-sans text-sm text-[#0F0728] font-semibold placeholder-[#6B5B8D] focus:outline-none transition-colors"
+                    />
                   </div>
 
                   <div>
                     <label className="block font-mono text-xs text-[#3B2B5C] mb-2 font-bold">
-                      Estimated Project Budget:
+                      Estimated Monthly Budget
                     </label>
                     <select
                       value={formData.budget}
@@ -267,16 +279,53 @@ export default function Contact() {
                   </div>
                 </div>
 
+                {/* Service Multi-Select Checkboxes */}
+                <div>
+                  <label className="block font-mono text-xs text-[#3B2B5C] mb-2.5 font-bold">
+                    Services Needed (Select all that apply)
+                  </label>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {[
+                      { id: 'ecommerce-seo', label: 'E-Commerce SEO & CRO' },
+                      { id: 'technical-audit', label: 'Technical & Architecture Audit' },
+                      { id: 'google-maps', label: 'Google Maps / Local 3-Pack' },
+                      { id: 'ai-automation', label: 'AI Search & Programmatic SEO' },
+                      { id: 'full-retainer', label: 'Dedicated Monthly Growth Retainer' },
+                      { id: 'digital-marketing', label: '360° Digital Marketing & Ads' }
+                    ].map((srv) => {
+                      const isChecked = formData.services.includes(srv.id);
+                      return (
+                        <label 
+                          key={srv.id}
+                          className={`flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border font-mono text-xs font-semibold cursor-pointer transition-all ${
+                            isChecked 
+                              ? 'bg-white border-[#7C3AED] text-[#7C3AED] shadow-xs' 
+                              : 'bg-white/70 border-[#E9D8FD] text-[#3B2B5C] hover:border-[#C4B5FD]'
+                          }`}
+                        >
+                          <input 
+                            type="checkbox"
+                            className="accent-[#7C3AED] w-4 h-4 rounded"
+                            checked={isChecked}
+                            onChange={() => toggleService(srv.id)}
+                          />
+                          <span>{srv.label}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
+                </div>
+
                 <div>
                   <label className="block font-mono text-xs text-[#3B2B5C] mb-2 font-bold">
-                    Project Details / Current Growth Obstacles *
+                    Current Bottlenecks &amp; Targets *
                   </label>
                   <textarea
                     required
-                    rows={4}
+                    rows={3}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Briefly describe your website domain, current traffic bottlenecks, industry, or revenue targets..."
+                    placeholder="E.g. We want to scale organic revenue in the UAE, recover lost keyword rankings, or eliminate indexing errors..."
                     className="w-full px-4 py-3 bg-white border border-[#E9D8FD] focus:border-[#7C3AED] rounded-xl font-sans text-sm text-[#0F0728] font-semibold placeholder-[#6B5B8D] focus:outline-none transition-colors"
                   />
                 </div>
@@ -287,11 +336,11 @@ export default function Contact() {
                   className="w-full flex items-center justify-center gap-2 py-4 bg-gradient-to-r from-[#7C3AED] via-[#8B5CF6] to-[#D946EF] text-white font-mono text-sm font-bold rounded-xl hover:opacity-95 shadow-xl shadow-[#7C3AED]/25 transition-all disabled:opacity-50"
                 >
                   {loading ? (
-                    <span>Transmitting Inquiry...</span>
+                    <span>Transmitting Parameters...</span>
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      <span>Submit 360° Strategy Proposal Inquiry</span>
+                      <span>Request SEO Growth Proposal &amp; Audit</span>
                     </>
                   )}
                 </button>
