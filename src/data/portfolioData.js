@@ -196,14 +196,15 @@ export const educationList = [
 
 export const certificatesList = [
   {
-    id: "cert-step",
-    title: "Professional Certification in Digital Marketing",
-    issuer: "STEP Institute of Art, Design & Management (IADM)",
-    period: "2023",
+    id: "cert-national-pbte",
+    title: "National Certificate in Digital Marketing (Level 3)",
+    issuer: "Government of Pakistan / NAVTTC & Punjab Board of Technical Education (PBTE)",
+    institute: "Step Institute Of Professional Development, Lahore",
+    period: "July 2023 — December 2023 (Awarded Jan 2024)",
     image: "/images/certificate-digital-marketing.jpeg",
-    credentialId: "IADM-DM-2023-VERIFIED",
-    skills: ["Search Engine Optimization (SEO)", "Technical SEO", "360° Digital Marketing", "Content Strategy", "Digital Analytics"],
-    description: "Comprehensive verified certification validating advanced competencies in organic search marketing, technical site architecture, digital campaigns, and performance tracking."
+    credentialId: "PBTE-CBT-15312 (Reg: PBTE/NVQ/CBT-0611ICT11/2023/31293)",
+    skills: ["SEO On-Page & Off-Page", "Content for Blog & Products", "Niche Identification & Affiliate Marketing", "Social Media & Video Marketing", "Digital Skills"],
+    description: "Official Government of Pakistan National Vocational Qualification (NVQ Level 3) in Digital Marketing, authorized by Punjab Board of Technical Education (PBTE) and NAVTTC. Assessed and certified for comprehensive SEO, digital content, and online marketing competencies."
   }
 ];
 
