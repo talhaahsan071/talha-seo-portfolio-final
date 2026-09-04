@@ -1,23 +1,23 @@
 export const personalInfo = {
   name: "Talha Ahsan",
-  title: "360° Digital Marketer & SEO Growth Strategist",
-  subtitle: "Driving measurable organic growth, conversion rate optimization, and full-funnel digital marketing across global industries.",
+  title: "SEO Expert & 360° Digital Growth Strategist",
+  subtitle: "Specializing in Technical SEO, E-Commerce Search Architecture, AI Programmatic Pipelines, and High-ROI Organic Traffic Systems.",
   location: "Lahore, Pakistan • Available Globally (Remote)",
   experienceYears: "3+",
   brandsManaged: 8,
   projectsDelivered: "50+",
   targetRegions: ["Worldwide / Global Remote 🌐", "USA & UK 🇺🇸 🇬🇧", "UAE & GCC 🇦🇪 🇸🇦", "Pakistan 🇵🇰"],
-  agencyRole: "SEO Expert & Growth Lead @ Delenzo Technologies Pvt. Ltd.",
-  freelanceFocus: "360° Digital Marketing & SEO for Global E-Commerce, B2B & Service Brands",
+  agencyRole: "Senior SEO Consultant & Growth Strategist",
+  freelanceFocus: "Technical SEO, E-Commerce Scaling & 360° Digital Growth for Global Brands",
   education: "BBIT (Bachelors in Business & Information Technology) — Virtual University of Pakistan",
   domain: "talhaahsan.vercel.app",
   email: "talhaahsandigital@gmail.com",
   linkedin: "https://www.linkedin.com/in/talhaahsanofficial",
-  whatsapp: "https://wa.me/923204966959?text=Hi%20Talha,%20I'd%20like%20to%20discuss%20a%20digital%20marketing%20%26%20SEO%20project.",
+  whatsapp: "https://wa.me/923204966959?text=Hi%20Talha,%20I'd%20like%20to%20discuss%20an%20SEO%20%26%20growth%20project.",
   whatsappNumber: "+92 320 4966959",
   phoneNumber: "+92 320 4966959",
   gmbUrl: "https://maps.app.goo.gl/EVGQ394bWifv42bW9",
-  metaDescription: "Talha Ahsan is a 360° Digital Marketer and SEO Growth Strategist with 3+ years experience driving verified organic traffic, technical SEO, and conversion systems across global industries.",
+  metaDescription: "Talha Ahsan is an SEO Expert and 360° Digital Growth Strategist with 3+ years experience driving verified organic traffic, technical SEO, Core Web Vitals, and conversion systems across global industries.",
   photos: {
     headshot: "/images/headshot.jpg",
     cafeWork: "/images/cafe_work.jpg",
@@ -28,23 +28,88 @@ export const personalInfo = {
 };
 
 export const heroSnippet = {
-  breadcrumb: "talhaahsan.vercel.app › 360-digital-marketer › global-growth",
-  title: "Talha Ahsan — 360° Digital Marketer & SEO Specialist",
-  snippet: "Full-stack digital growth strategist delivering end-to-end SEO, conversion optimization, and high-performance search systems across global e-commerce, B2B, legal, tech, and enterprise brands.",
+  breadcrumb: "talhaahsan.vercel.app › seo-expert › digital-growth",
+  title: "Talha Ahsan — SEO Expert & Technical Growth Strategist",
+  snippet: "Search Engine Optimization specialist and digital growth architect. Delivering technical site audits, Core Web Vitals engineering, programmatic AI search pipelines, and high-converting organic frameworks across e-commerce, B2B, and global scale-ups.",
   chips: [
-    { label: "3+ Yrs Experience", icon: "Award" },
+    { label: "SEO Specialist (Priority #1)", icon: "Search" },
+    { label: "3+ Yrs Hands-on Exp", icon: "Award" },
     { label: "50+ Projects Delivered", icon: "Building2" },
-    { label: "360° Digital Marketing", icon: "Sparkles" },
-    { label: "Global & Remote Clients", icon: "Globe" },
+    { label: "360° Growth & CRO", icon: "Sparkles" },
     { label: "Avg. Organic Growth: +180%", icon: "TrendingUp" }
   ]
 };
 
+export const entityBio = {
+  badge: "OFFICIAL ENTITY PROFILE & KNOWLEDGE HUB",
+  title: "Who is Talha Ahsan?",
+  subheading: "Structured Named Entity Overview for Search Engines, AI Knowledge Retrieval (GEO), and Industry Representation",
+  definitionalProse: [
+    "Talha Ahsan is an accomplished Search Engine Optimization (SEO) expert, technical growth consultant, and 360° digital marketing strategist based in Lahore, Pakistan, working with high-growth e-commerce brands, B2B enterprises, and global organizations. Specializing in advanced technical site architecture, Core Web Vitals engineering, programmatic search automation, and Generative Engine Optimization (GEO), he engineers high-impact organic search systems that translate search engine visibility into defensible, revenue-generating growth channels.",
+    "With continuous hands-on experience spanning 50+ projects across e-commerce retail, high-ticket legal services, healthcare non-profits, technology scale-ups, and commercial logistics, Talha combines algorithmic search science with modern full-funnel marketing. Rather than relying on superficial checklists or vanity impression metrics, his framework centers on buyer intent mapping, semantic schema markup, crawl budget optimization, and conversion-focused content architecture.",
+    "Talha's documented track record includes scaling Hope Enterprises to over 10,700 organic clicks with a +280% traffic surge, taking Carrot Sun Oil from flat search numbers to 60+ targeted commercial buyers daily with an average position of 7.2, capturing top Google Maps 3-pack rankings for commercial retail hubs, and driving a 300% surge in qualified inbound inquiries for competitive UAE legal advisory firms."
+  ],
+  coreOfferings: [
+    {
+      title: "Advanced Technical SEO & Crawl Architecture",
+      icon: "Cpu",
+      description: "Deep log analysis, JavaScript rendering optimization, crawl budget preservation, Core Web Vitals speed tuning (sub-2.2s LCP), canonical hierarchy, and custom JSON-LD schema architecture."
+    },
+    {
+      title: "E-Commerce Organic Scaling & Catalog Hierarchy",
+      icon: "ShoppingCart",
+      description: "Full-funnel collection restructuring, faceted navigation index control, multi-currency search architectures (Shopify, WooCommerce, custom CMS), and high-intent buyer keyword capture."
+    },
+    {
+      title: "Generative Engine Optimization (GEO) & AI Search",
+      icon: "Sparkles",
+      description: "Preparing brands for Google AI Overviews, Gemini Search, and ChatGPT search discovery through structured entity definitions, topical depth hubs, and authoritative information architecture."
+    },
+    {
+      title: "Local SEO & Google Business Profile #1 Rankings",
+      icon: "MapPin",
+      description: "Dominating local 3-pack search results for retail hubs and regional service businesses via verified category alignment, NAP synchronization, localized schema, and automated review funnels."
+    },
+    {
+      title: "360° Digital Marketing & Conversion Architecture",
+      icon: "Target",
+      description: "Connecting search traffic directly with conversion rate optimization (CRO), persuasive UX, landing page optimization, and high-margin customer acquisition channels."
+    }
+  ]
+};
+
+export const faqList = [
+  {
+    question: "Who is Talha Ahsan?",
+    answer: "Talha Ahsan is an SEO expert, technical growth consultant, and 360° digital marketing strategist based in Lahore, Pakistan. He specializes in Technical SEO, E-Commerce organic search scaling, Core Web Vitals engineering, and Generative Engine Optimization (GEO) for global brands."
+  },
+  {
+    question: "What are Talha Ahsan's primary areas of expertise?",
+    answer: "Talha Ahsan's primary specialization is Technical & Full-Funnel SEO, with secondary expertise as a 360° digital marketer. His core competencies include deep technical site audits, Core Web Vitals speed optimization, Google Maps #1 local pack dominance, e-commerce catalog restructuring, programmatic Python/LLM search pipelines, and conversion rate optimization (CRO)."
+  },
+  {
+    question: "Which industries and markets does Talha Ahsan work with?",
+    answer: "Talha Ahsan works with high-growth e-commerce brands, B2B companies, legal practices, technology scale-ups, and multi-location retail businesses across Pakistan, the United States, the United Kingdom, the UAE, and global markets."
+  },
+  {
+    question: "What notable results and case studies has Talha Ahsan delivered?",
+    answer: "Talha has delivered documented results including scaling Hope Enterprises to 10,700+ organic clicks and 447K search impressions (+280% growth), taking Carrot Sun Oil from flat search traffic to 60+ daily commercial clicks in 90 days, generating over 3,000 local profile views and 619 customer interactions on Google Maps, and driving a 300% inbound lead increase for UAE legal services."
+  },
+  {
+    question: "What is Talha Ahsan's educational background and credentials?",
+    answer: "Talha Ahsan is pursuing a Bachelor of Business and Information Technology (BBIT) at the Virtual University of Pakistan, holds an ICS in Computer Science from MAO Graduate College, and earned a Professional Certification in Digital Marketing from the STEP Institute of Art, Design & Management (IADM)."
+  },
+  {
+    question: "How can businesses contact or consult with Talha Ahsan?",
+    answer: "Businesses can contact Talha Ahsan directly via email at talhaahsandigital@gmail.com, via WhatsApp/Phone at +92 320 4966959, through LinkedIn at linkedin.com/in/talhaahsanofficial, or through his official portfolio at talhaahsan.vercel.app."
+  }
+];
+
 export const experiences = [
   {
     period: "JANUARY 2025 — PRESENT",
-    badge: "CURRENT AGENCY LEAD",
-    role: "SEO Expert",
+    badge: "AGENCY SEARCH LEAD",
+    role: "SEO Expert & Growth Consultant",
     company: "Delenzo Technologies Private Limited",
     location: "Lahore, Punjab, Pakistan",
     description: "Lead SEO initiatives for multi-industry clients, enhancing search visibility, website performance, and localized search presence.",
@@ -137,32 +202,46 @@ export const certificatesList = [
     period: "2023",
     image: "/images/certificate-digital-marketing.jpeg",
     credentialId: "IADM-DM-2023-VERIFIED",
-    skills: ["360° Digital Marketing", "Search Engine Optimization (SEO)", "Social Media Marketing", "Content Strategy", "Digital Analytics"],
+    skills: ["Search Engine Optimization (SEO)", "Technical SEO", "360° Digital Marketing", "Content Strategy", "Digital Analytics"],
     description: "Comprehensive verified certification validating advanced competencies in organic search marketing, technical site architecture, digital campaigns, and performance tracking."
   }
 ];
 
 export const skills = [
   {
-    id: "360-digital-marketing",
-    title: "360° Digital Marketing Strategy",
-    icon: "Sparkles",
-    description: "End-to-end omnichannel digital growth: blending search optimization, content funnels, paid media alignment, and lead generation systems.",
-    tags: ["Full-Funnel Growth", "Lead Gen", "Multi-Channel", "ROI Alignment"]
-  },
-  {
     id: "tech-seo",
-    title: "Technical SEO & Web Architecture",
+    title: "Technical SEO & Web Architecture (Priority #1)",
     icon: "Cpu",
-    description: "Crawl budget efficiency, JavaScript rendering, Core Web Vitals (95+), canonical cleanup, XML sitemaps, and log file analysis.",
+    description: "Crawl budget efficiency, JavaScript rendering, Core Web Vitals (sub-2.2s), canonical cleanup, XML sitemaps, and log file analysis.",
     tags: ["Core Web Vitals", "Indexing", "Crawl Budget", "Schema.org"]
   },
   {
+    id: "ecommerce-seo",
+    title: "Global E-Commerce Search & Catalog Hierarchy",
+    icon: "ShoppingCart",
+    description: "Multi-region, multi-currency store architecture on Shopify, WooCommerce & custom CMS with faceted navigation index control.",
+    tags: ["Shopify Liquid", "WooCommerce", "Faceted Nav", "Product Schema"]
+  },
+  {
+    id: "geo-ai-search",
+    title: "Generative Engine Optimization (GEO) & AI Search",
+    icon: "Sparkles",
+    description: "Optimizing entity visibility for Google AI Overviews, Gemini Search, and ChatGPT through structured Knowledge Graph architectures.",
+    tags: ["AI Overviews", "GEO Strategy", "Knowledge Graph", "Entity SEO"]
+  },
+  {
     id: "on-page",
-    title: "On-Page & Search Intent Mapping",
+    title: "On-Page & Search Intent Architecture",
     icon: "FileCode2",
     description: "Buyer-stage intent alignment, semantic content architecture, heading taxonomy, internal link hubs, and CTR-optimized SERP snippets.",
     tags: ["Intent Mapping", "Semantic HTML", "Internal Links", "CTR Lift"]
+  },
+  {
+    id: "local-seo",
+    title: "Local SEO & Google Maps (GBP) #1 Rank",
+    icon: "MapPin",
+    description: "Google Business Profile optimization, local 3-pack dominance, NAP citation synchronization, and automated review velocity.",
+    tags: ["Google Maps #1", "Local Pack", "NAP Consistency", "Review Funnels"]
   },
   {
     id: "off-page",
@@ -179,25 +258,11 @@ export const skills = [
     tags: ["SERP Gap", "High-Intent", "Funnel Mapping", "Competitor Intel"]
   },
   {
-    id: "ecommerce-seo",
-    title: "Global E-Commerce & Multi-Store SEO",
-    icon: "ShoppingCart",
-    description: "Multi-region, multi-currency store architecture on Shopify, WooCommerce & custom CMS with faceted navigation index control.",
-    tags: ["Shopify Liquid", "WooCommerce", "Faceted Nav", "Product Schema"]
-  },
-  {
-    id: "local-seo",
-    title: "Local SEO & Google Maps (GBP) #1 Rank",
-    icon: "MapPin",
-    description: "Google Business Profile optimization, local 3-pack dominance, NAP citation synchronization, and automated review velocity.",
-    tags: ["Google Maps #1", "Local Pack", "NAP Consistency", "Review Funnels"]
-  },
-  {
-    id: "ai-workflows",
-    title: "AI Workflows & Programmatic Automation",
-    icon: "Layers",
-    description: "Harnessing Python web scrapers, LLMs, and REST APIs for automated meta description generation, intent parsing, and scalable SEO.",
-    tags: ["Python Scraping", "AI Metadata", "REST APIs", "Programmatic SEO"]
+    id: "360-growth",
+    title: "360° Digital Marketing & CRO Synergy",
+    icon: "Target",
+    description: "Full-funnel digital marketing support: bridging search traffic with conversion rate optimization (CRO), landing page design, and lead nurturing.",
+    tags: ["CRO Synergy", "Landing Pages", "Full-Funnel", "Lead Gen"]
   }
 ];
 
@@ -327,31 +392,31 @@ export const caseStudies = [
 export const processSteps = [
   {
     step: "01",
-    title: "360° Digital & Technical Audit",
-    subtitle: "Uncovering invisible growth obstacles",
-    description: "Deep dive using Screaming Frog, GSC, GA4, and log analysis to locate crawl errors, index bloat, Core Web Vitals lag, and conversion drop-offs.",
-    deliverable: "Comprehensive Growth & Technical Priority Matrix"
+    title: "Deep Technical & Crawl Audit",
+    subtitle: "Uncovering invisible search bottlenecks",
+    description: "Comprehensive inspection using Screaming Frog, GSC, and server logs to eliminate index bloat, crawl budget waste, Core Web Vitals lag, and canonical confusion.",
+    deliverable: "Technical SEO Priority & Remediation Matrix"
   },
   {
     step: "02",
-    title: "Buyer Intent & Market Gap Mapping",
+    title: "Commercial Intent & Competitor Gap",
     subtitle: "Targeting revenue, not vanity traffic",
-    description: "Analyzing competitor ranking and market gaps across search engines to identify high-converting buyer-stage keywords and customer journeys.",
-    deliverable: "Omnichannel Keyword & SERP Opportunity Map"
+    description: "Reverse-engineering competitor ranking gaps across global search engines to capture high-converting buyer-stage keywords and customer acquisition funnels.",
+    deliverable: "High-Intent Keyword & SERP Opportunity Map"
   },
   {
     step: "03",
     title: "Technical & On-Page Execution",
-    subtitle: "Precision structural optimization",
-    description: "Deploying high-CTR metadata, implementing rich JSON-LD schema (Product, LocalBusiness, FAQ), and optimizing internal link distribution.",
-    deliverable: "On-Page & Schema Deployment"
+    subtitle: "Precision structural deployment",
+    description: "Deploying high-CTR metadata, implementing rich JSON-LD schema (Product, LocalBusiness, FAQ), and optimizing internal link distribution for authority flow.",
+    deliverable: "On-Page & Schema Code Deployment"
   },
   {
     step: "04",
-    title: "Topical Content & Authority Building",
-    subtitle: "Dominating search engine trust & PR",
-    description: "Building comprehensive content hubs to establish topical depth while acquiring contextual, high-authority brand mentions and backlinks.",
-    deliverable: "Content Hubs & Backlink Acquisition"
+    title: "Topical Authority & Entity Building",
+    subtitle: "Dominating search engine trust & GEO",
+    description: "Building comprehensive content hubs to establish topical depth while acquiring contextual, high-authority brand citations and natural editorial backlinks.",
+    deliverable: "Content Architecture & Backlink Acquisition"
   },
   {
     step: "05",

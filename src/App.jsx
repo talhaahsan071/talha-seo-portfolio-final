@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import BusinessImpact from './components/BusinessImpact';
 import About from './components/About';
+import EntityBio from './components/EntityBio';
 import Journey from './components/Journey';
 import Skills from './components/Skills';
 import Tools from './components/Tools';
@@ -11,6 +12,7 @@ import LiveSerpTool from './components/LiveSerpTool';
 import Certifications from './components/Certifications';
 import Process from './components/Process';
 import Testimonials from './components/Testimonials';
+import FaqSection from './components/FaqSection';
 import CtaBanner from './components/CtaBanner';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -33,40 +35,46 @@ export default function App() {
         {/* 01. Signature SERP Hero */}
         <Hero onOpenCv={() => setIsCvOpen(true)} />
 
-        {/* 02. Measurable Business Impact (Reference 3) */}
+        {/* 02. Measurable Business Impact */}
         <BusinessImpact />
 
         {/* 03. About Section */}
         <About />
 
-        {/* 04. My Journey Timeline (Reference 1 & 2) */}
+        {/* 04. Official Entity Profile & Knowledge Hub (Engineered for Google AI Overviews) */}
+        <EntityBio />
+
+        {/* 05. My Journey Timeline */}
         <Journey />
 
-        {/* 05. 360° Digital Marketing & Skills */}
+        {/* 06. Technical SEO & 360° Digital Marketing Skills */}
         <Skills />
 
-        {/* 06. Tool Stack & Architecture */}
+        {/* 07. Tool Stack & Architecture */}
         <Tools />
 
-        {/* 07. Verified Case Studies with GSC Proof */}
+        {/* 08. Verified Case Studies with GSC Proof */}
         <CaseStudies />
 
-        {/* 08. Interactive Live SERP & SEO Diagnostic Simulator */}
+        {/* 09. Interactive Live SERP & SEO Diagnostic Simulator */}
         <LiveSerpTool />
 
-        {/* 09. Certifications & Academic Credentials */}
+        {/* 10. Certifications & Academic Credentials */}
         <Certifications />
 
-        {/* 10. 5-Stage Methodology Process */}
+        {/* 11. 5-Stage Methodology Process */}
         <Process />
 
-        {/* 11. Regional & Enterprise Trust Brands */}
+        {/* 12. Regional & Enterprise Trust Brands (Infinite Marquee) */}
         <Testimonials />
 
-        {/* 12. Gradient Action Banner */}
+        {/* 13. Frequently Asked Questions & AI Overviews Directory */}
+        <FaqSection />
+
+        {/* 14. Action Banner */}
         <CtaBanner />
 
-        {/* 13. Contact Section & Direct Channels */}
+        {/* 15. Contact Section & Direct Channels */}
         <Contact />
       </main>
 
@@ -77,20 +85,9 @@ export default function App() {
       />
 
       {/* Interactive Modals */}
-      <CvModal 
-        isOpen={isCvOpen} 
-        onClose={() => setIsCvOpen(false)} 
-      />
-
-      <SitemapModal 
-        isOpen={isSitemapOpen} 
-        onClose={() => setIsSitemapOpen(false)} 
-      />
-
-      <RobotsModal 
-        isOpen={isRobotsOpen} 
-        onClose={() => setIsRobotsOpen(false)} 
-      />
+      <CvModal isOpen={isCvOpen} onClose={() => setIsCvOpen(false)} />
+      <SitemapModal isOpen={isSitemapOpen} onClose={() => setIsSitemapOpen(false)} />
+      <RobotsModal isOpen={isRobotsOpen} onClose={() => setIsRobotsOpen(false)} />
     </div>
   );
 }

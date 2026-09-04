@@ -68,7 +68,7 @@ export default function About() {
             {/* Storytelling Intro in Simple, Engaging, Human Tone */}
             <div className="space-y-4 text-base sm:text-lg text-[#3B2B5C] leading-relaxed">
               <p className="font-heading text-xl sm:text-2xl font-bold text-[#0F0728] leading-snug">
-                I'm <span className="text-[#7C3AED]">Talha Ahsan</span>, a digital growth professional focused on helping businesses turn organic search and marketing into real, predictable revenue.
+                I'm <span className="text-[#7C3AED]">Talha Ahsan</span>, an SEO expert and technical growth consultant focused on helping businesses turn organic search into predictable, high-margin revenue.
               </p>
               
               <p className="text-base text-[#4A3B69] font-medium leading-relaxed">

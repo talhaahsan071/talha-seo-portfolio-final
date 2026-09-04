@@ -13,7 +13,8 @@ import {
   Sparkles,
   ShieldCheck,
   Mail,
-  MessageSquare
+  MessageSquare,
+  Cpu
 } from 'lucide-react';
 import { heroSnippet, personalInfo } from '../data/portfolioData';
 
@@ -102,7 +103,7 @@ export default function Hero({ onOpenCv }) {
       {/* Hero Container */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
         
-        {/* Top Availability Badge */}
+        {/* Top Availability Badge prioritizing SEO Expert */}
         <motion.div 
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -112,7 +113,7 @@ export default function Hero({ onOpenCv }) {
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] text-xs font-mono text-[#0F0728] shadow-sm">
             <span className="w-2.5 h-2.5 rounded-full bg-[#059669] animate-ping" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#059669]" />
-            <span className="font-bold text-[#0F0728]">Talha Ahsan — 360° Digital Marketer &amp; SEO Specialist</span>
+            <span className="font-bold text-[#0F0728]">Talha Ahsan — SEO Expert &amp; Technical Growth Strategist</span>
           </div>
         </motion.div>
 
@@ -134,30 +135,30 @@ export default function Hero({ onOpenCv }) {
                 <Lock className="w-3.5 h-3.5 text-[#059669] shrink-0" />
                 <span className="text-[#0F0728] font-bold">{personalInfo.domain}</span>
                 <span className="text-[#6B5B8D]">›</span>
-                <span className="text-[#6B5B8D] shrink-0">360-digital-marketer</span>
+                <span className="text-[#6B5B8D] shrink-0">seo-expert</span>
                 <span className="text-[#6B5B8D]">›</span>
-                <span className="text-[#7C3AED] shrink-0 font-bold">global-growth</span>
+                <span className="text-[#7C3AED] shrink-0 font-bold">digital-growth</span>
               </div>
 
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3E8FF] border border-[#E9D8FD] font-mono text-[11px] text-[#7C3AED]">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#059669]" />
-                <span className="font-bold">Verified Google Result</span>
+                <span className="font-bold">Verified Google Search Result</span>
               </div>
             </motion.div>
 
-            {/* SERP Title with Fluid Clamp Typography */}
+            {/* SERP Title prioritizing SEO Expert */}
             <motion.div variants={itemVariants} className="mb-4">
               <a href="#about" className="group inline-block focus:outline-none">
                 <h1 className="font-heading text-[clamp(1.65rem,3.4vw,2.5rem)] font-extrabold leading-[1.2] text-[#7C3AED] group-hover:text-[#D946EF] transition-colors duration-200">
-                  Talha Ahsan — 360° Digital Marketer &amp; SEO Growth Strategist
+                  {heroSnippet.title}
                 </h1>
               </a>
             </motion.div>
 
-            {/* 2-line Meta Description */}
+            {/* Meta Description */}
             <motion.div variants={itemVariants} className="mb-6">
               <p className="font-sans text-base sm:text-lg text-[#3B2B5C] leading-relaxed font-medium">
-                Full-stack digital growth strategist delivering end-to-end SEO, conversion optimization, and high-performance search systems across global e-commerce, B2B, legal, tech, and enterprise brands.
+                {heroSnippet.snippet}
               </p>
             </motion.div>
 
@@ -165,8 +166,8 @@ export default function Hero({ onOpenCv }) {
             <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2 sm:gap-3 border-t border-[#E9D8FD] pt-5 mb-7">
               
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#0F0728] shadow-xs">
-                <Award className="w-3.5 h-3.5 text-[#7C3AED]" />
-                <span className="font-bold">3+ Yrs Exp</span>
+                <Search className="w-3.5 h-3.5 text-[#7C3AED]" />
+                <span className="font-bold">SEO Specialist #1</span>
               </div>
 
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#0F0728] shadow-xs">
@@ -176,7 +177,7 @@ export default function Hero({ onOpenCv }) {
 
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#0F0728] shadow-xs">
                 <Sparkles className="w-3.5 h-3.5 text-[#6366F1]" />
-                <span className="font-bold">360° Marketing</span>
+                <span className="font-bold">360° Growth &bull; CRO</span>
               </div>
 
               <a 
@@ -200,10 +201,10 @@ export default function Hero({ onOpenCv }) {
               </a>
 
               <a
-                href="#journey"
+                href="#profile"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#F8F4FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] text-[#0F0728] font-mono text-sm font-bold transition-all duration-200 hover:scale-[1.02]"
               >
-                <span>Career Journey</span>
+                <span>Entity Profile</span>
               </a>
 
               <button
@@ -217,7 +218,7 @@ export default function Hero({ onOpenCv }) {
 
             {/* Social Pill Row (Prompt Guide Section 1) */}
             <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2 pt-4 border-t border-[#E9D8FD]/70">
-              <span className="font-mono text-[11px] text-[#6B5B8D] font-semibold mr-1">Connect:</span>
+              <span className="font-mono text-[11px] text-[#6B5B8D] font-semibold mr-1">Direct Channels:</span>
               {socialPills.map((pill, i) => {
                 const Icon = pill.icon;
                 return (
@@ -246,7 +247,7 @@ export default function Hero({ onOpenCv }) {
             <div className="relative rounded-3xl overflow-hidden border-2 border-[#E9D8FD] bg-white shadow-xl purple-glow">
               <img
                 src={personalInfo.photos.headshot}
-                alt="Talha Ahsan — 360 Digital Marketer & SEO Specialist"
+                alt="Talha Ahsan — SEO Expert & Growth Strategist"
                 className="w-full h-[470px] object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
 
@@ -254,13 +255,13 @@ export default function Hero({ onOpenCv }) {
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#E9D8FD] text-[#0F0728] shadow-xl flex items-center justify-between">
                 <div>
                   <h3 className="font-heading text-lg font-bold text-[#0F0728]">Talha Ahsan</h3>
-                  <p className="font-mono text-xs text-[#7C3AED] font-bold">360° Marketer &amp; SEO Lead</p>
+                  <p className="font-mono text-xs text-[#7C3AED] font-bold">SEO Expert &bull; 360° Growth</p>
                 </div>
                 <div className="text-right font-mono text-xs">
                   <span className="inline-flex items-center gap-1 text-[#059669] font-bold">
                     <TrendingUp className="w-3.5 h-3.5" /> +180% Avg Growth
                   </span>
-                  <p className="text-[#6B5B8D] text-[10px]">Delenzo Technologies</p>
+                  <p className="text-[#6B5B8D] text-[10px]">Global E-Com &amp; B2B</p>
                 </div>
               </div>
             </div>
