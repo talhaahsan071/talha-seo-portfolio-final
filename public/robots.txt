@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talhaahsan.vercel.app/sitemap.xml
