@@ -126,23 +126,12 @@ export default function Hero({ onOpenCv }) {
             animate="visible"
             className="lg:col-span-7 relative bg-white border border-[#E9D8FD] rounded-3xl p-6 sm:p-9 shadow-xl purple-glow"
           >
-            {/* SERP Browser Header */}
-            <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-between gap-3 border-b border-[#E9D8FD] pb-4 mb-6">
-              
-              {/* Breadcrumb line */}
-              <div className="flex items-center gap-2 font-mono text-xs text-[#6B5B8D] overflow-x-auto py-1">
-                <Lock className="w-3.5 h-3.5 text-[#059669] shrink-0" />
-                <span className="text-[#0F0728] font-bold">{personalInfo.domain}</span>
-                <span className="text-[#6B5B8D]">›</span>
-                <span className="text-[#3B2B5C] shrink-0 font-semibold">proven-search-growth</span>
-                <span className="text-[#6B5B8D]">›</span>
-                <span className="text-[#059669] shrink-0 font-bold">+280%-revenue-surge</span>
-              </div>
-
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F3E8FF] border border-[#E9D8FD] font-mono text-[11px] text-[#7C3AED]">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#059669]" />
-                <span className="font-bold">Verified Google Search Result</span>
-              </div>
+            {/* Clean Section Tag */}
+            <motion.div variants={itemVariants} className="flex items-center gap-2 mb-4">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs font-bold text-[#7C3AED] shadow-2xs">
+                <Sparkles className="w-3.5 h-3.5 text-[#7C3AED]" />
+                <span>Organic Search &amp; Growth Consultant</span>
+              </span>
             </motion.div>
 
             {/* Main Headline (Recommended by ChatGPT) */}
@@ -179,14 +168,10 @@ export default function Hero({ onOpenCv }) {
                 <span className="font-bold">AI Search Pipelines</span>
               </div>
 
-              <a 
-                href="#case-studies"
-                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#F3E8FF] hover:bg-[#E9D8FD] border border-[#7C3AED]/40 font-mono text-xs text-[#7C3AED] transition-all hover:scale-105"
-              >
-                <MapPin className="w-3.5 h-3.5 text-[#059669]" />
-                <span className="underline underline-offset-2 font-bold">Top Maps &amp; GSC Wins</span>
-                <ArrowRight className="w-3 h-3 text-[#059669]" />
-              </a>
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#0F0728] shadow-xs">
+                <Globe className="w-3.5 h-3.5 text-[#059669]" />
+                <span className="font-bold">Global &amp; UAE / GCC</span>
+              </div>
             </motion.div>
 
             {/* Action CTAs: Direct & Compelling */}
