@@ -26,36 +26,74 @@ export default function ServicesArchivePage() {
   }, []);
 
   const serviceIcons = {
-    'ecommerce-seo': ShoppingCart,
-    'local-seo': MapPin,
+    'on-page-seo': Search,
     'tech-seo': Cpu,
-    'ai-seo': Sparkles,
+    'link-building': Zap,
+    'local-seo': MapPin,
+    'ecommerce-seo': ShoppingCart,
+    'seo-audit': Award,
   };
 
   const detailedOfferings = [
     {
-      id: 'ecommerce-seo',
-      title: 'E-Commerce & Online Store SEO',
-      tagline: 'Rank your products and collection categories on Google to bring steady buyers without ad burn.',
-      badge: 'HIGHEST REVENUE IMPACT',
-      platforms: 'Shopify, WooCommerce, Magento, Custom React/Next.js',
+      id: 'on-page-seo',
+      title: 'On-Page SEO Optimization',
+      tagline: 'Optimize your page titles, headings, and text so Google easily understands what you sell and ranks you on Page 1.',
+      badge: 'PAGE 1 RANKINGS',
+      platforms: 'WordPress, Shopify, Webflow, Custom HTML/React',
       deliverables: [
-        'Collection Silo Hierarchy & Category Optimization',
-        'Faceted Filter & Crawl Parameter Cleanup',
-        'High-Intent Buyer Search Intent Mapping',
-        'Commercial Product Schema (Price, Availability, Reviews)',
-        'Product Guide Funnels passing PageRank to priority collections'
+        'High-Intent Buyer Keyword Research & Mapping',
+        'Click-Winning Title Tags & Meta Descriptions',
+        'Clear H1, H2, H3 Heading Content Structure',
+        'Smart Internal Links Funneling Authority to Money Pages',
+        'Image Alt Text & Content Readability Polish'
       ],
       caseStudyTieIn: {
-        name: 'Hope Enterprises',
-        result: '+280% organic clicks (10,700 clicks) in 6 months'
+        name: 'Carrot Sun Oil',
+        result: 'Average position 7.2 on Page 1 in 90 days'
+      }
+    },
+    {
+      id: 'tech-seo',
+      title: 'Technical SEO & Core Web Vitals Speed',
+      tagline: 'Fix hidden website errors, speed up pages under 2 seconds, and ensure Google indexes every URL cleanly.',
+      badge: 'SUB-2S SPEED',
+      platforms: 'WordPress, Shopify, Webflow, Headless CMS, Custom Code',
+      deliverables: [
+        'Complete Screaming Frog 500+ Point Health Crawl',
+        'Sub-2.2s Largest Contentful Paint (LCP) Speed Tuning',
+        'Mobile-First Usability & CLS Layout Shift Elimination',
+        'Robots.txt, XML Sitemaps & Canonical Architecture',
+        'Clean Schema Markup (Organization, FAQ, Breadcrumbs)'
+      ],
+      caseStudyTieIn: {
+        name: 'Technical Health Audits',
+        result: '100% Core Web Vitals Pass Rate with zero indexing leaks'
+      }
+    },
+    {
+      id: 'link-building',
+      title: 'High-Authority Link Building (Off-Page SEO)',
+      tagline: 'Get trusted, high-authority websites to link back to your business, giving you the algorithmic power to beat competitors.',
+      badge: '100% WHITE-HAT',
+      platforms: 'High DA/DR Niche Blogs, Editorial Outreach, PR Platforms',
+      deliverables: [
+        '100% Safe Manual Outreach (Zero Spam Networks)',
+        'High DA / DR Niche-Relevant Guest Posts & Contextual Mentions',
+        'Competitor Backlink Replication Strategy',
+        'Local Pakistani & International Business Citations',
+        'Transparent Monthly Live Backlink Reports'
+      ],
+      caseStudyTieIn: {
+        name: '2S Lawyers UAE',
+        result: '+300% inbound leads from high-authority niche trust'
       }
     },
     {
       id: 'local-seo',
       title: 'Google Maps & Local 3-Pack Optimization',
-      tagline: 'Get your physical shop or service business into the Top 3 on Google Maps in your city.',
-      badge: 'HIGHEST INBOUND CALLS',
+      tagline: 'Rank your shop or service business in the Top 3 on Google Maps in your city to bring direct calls and visits.',
+      badge: 'PHONE CALLS & VISITS',
       platforms: 'Google Business Profile, Local Directories, Apple Maps',
       deliverables: [
         'Primary & Secondary Category Signal Alignment',
@@ -70,39 +108,39 @@ export default function ServicesArchivePage() {
       }
     },
     {
-      id: 'tech-seo',
-      title: 'Technical SEO & Core Web Vitals Speed',
-      tagline: 'Fix hidden website errors, speed up pages under 2 seconds, and ensure Google indexes every URL cleanly.',
-      badge: 'FOUNDATIONAL HEALTH',
-      platforms: 'WordPress, Liquid, Webflow, Headless CMS, Custom Code',
+      id: 'ecommerce-seo',
+      title: 'E-Commerce & Online Store SEO',
+      tagline: 'Rank your products and collection categories on Google to bring steady buyers without ad burn.',
+      badge: 'SALES & REVENUE',
+      platforms: 'Shopify, WooCommerce, Magento, Custom React/Next.js',
       deliverables: [
-        'Complete Screaming Frog 500+ Point Health Crawl',
-        'Sub-2.2s Largest Contentful Paint (LCP) Optimization',
-        'Mobile-First Usability & CLS Layout Shift Elimination',
-        'Robots.txt, XML Sitemaps & Canonical Directive Architecture',
-        'JavaScript Rendering & Server-Side Hydration Auditing'
+        'Collection Silo Hierarchy & Category Optimization',
+        'Faceted Filter & Crawl Parameter Cleanup',
+        'High-Intent Buyer Search Intent Mapping',
+        'Commercial Product Schema (Price, Availability, Reviews)',
+        'Product Guide Funnels passing PageRank to priority collections'
       ],
       caseStudyTieIn: {
-        name: 'Technical Speed Benchmarks',
-        result: '100% Core Web Vitals Pass Rate with zero indexing leaks'
+        name: 'Hope Enterprises',
+        result: '+280% organic clicks (10,700 clicks) in 6 months'
       }
     },
     {
-      id: 'ai-seo',
-      title: 'AI-Powered Search & Automation Pipelines',
-      tagline: 'Deploy smart AI workflows to analyze thousands of buyer searches and build ranking clusters 5x faster.',
-      badge: 'NEXT-GEN ADVANTAGE',
-      platforms: 'Python Scripts, Claude 3.5, OpenAI GPT-4o, GSC APIs',
+      id: 'seo-audit',
+      title: 'Complete Website SEO Audit & Action Plan',
+      tagline: 'Find the exact errors holding your website back and get a clear, step-by-step roadmap to rank #1.',
+      badge: '100+ POINT AUDIT',
+      platforms: 'Any Website (WordPress, Shopify, Custom, Wix)',
       deliverables: [
-        'Semantic Keyword Intent Clustering (500+ queries categorized in minutes)',
-        'Programmatic Topical Content Briefs with Missing Entity Gaps',
-        'Automated GSC Ranking Drop & Indexing Monitor Scripts',
-        'Generative Engine Optimization (GEO) for Google AI Overviews',
-        'Automated Client Performance Dashboard Feeds'
+        '100+ Point In-Depth Technical & Content Inspection',
+        'Top 5 Competitor Ranking & Traffic Gap Breakdown',
+        'Missing Low-Hanging Buyer Keyword Checklist',
+        'Prioritized Action List (What to fix first for fast results)',
+        '15-Minute 1-on-1 Consultation Call on WhatsApp'
       ],
       caseStudyTieIn: {
-        name: 'AI Clustering Workflow',
-        result: 'Reduced topical cluster planning from 4 weeks to 3 days'
+        name: 'Discovery Audits',
+        result: 'Uncovers the exact 3-5 bottlenecks blocking your traffic'
       }
     }
   ];

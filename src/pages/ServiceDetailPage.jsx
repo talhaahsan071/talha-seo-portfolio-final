@@ -219,6 +219,153 @@ export default function ServiceDetailPage() {
         { q: 'How does AI help my website rank faster?', a: 'By analyzing thousands of search data points in minutes, we find high-converting, low-competition keywords that traditional agencies overlook, accelerating results by 5x.' },
         { q: 'What tools and models do you use?', a: 'I use custom Python scripts integrated with Claude 3.5, OpenAI GPT-4o, Google Gemini API, Screaming Frog, and Google Search Console APIs.' }
       ]
+    },
+
+    'on-page-seo': {
+      title: 'On-Page SEO Optimization',
+      subtitle: 'Engineered to Make Google Understand and Rank Every Page',
+      badge: 'PAGE 1 RANKINGS',
+      icon: ShoppingCart,
+      tagline: 'Optimize your page titles, headings, and text so Google easily understands what you sell and ranks you on Page 1.',
+      problemTitle: 'Why Great Websites Still Don’t Rank on Page 1',
+      problemDescription: 'Google doesn’t guess. If your website lacks high-intent buyer keywords, has messy headings, or lacks internal links, Google simply ranks your competitor instead. On-page SEO aligns your website perfectly with Google algorithmic signals.',
+      deliverables: [
+        {
+          title: 'High-Intent Buyer Keyword Research & Mapping',
+          description: 'Identify the exact terms paying customers type and map each keyword to the most relevant landing page.'
+        },
+        {
+          title: 'Click-Winning Title Tags & Meta Descriptions',
+          description: 'Craft titles and snippets designed to stand out on Page 1 and maximize your organic click-through rate (CTR).'
+        },
+        {
+          title: 'H1, H2, H3 Heading Content Structure',
+          description: 'Organize page content logically so both human readers and search engine bots immediately grasp your core offerings.'
+        },
+        {
+          title: 'Smart Internal Linking Architecture',
+          description: 'Channel authority from informational blogs directly into your high-converting money pages.'
+        },
+        {
+          title: 'Image Alt Text & Media Optimization',
+          description: 'Optimize image filenames, descriptive alt tags, and WebP compression for Google Image search visibility.'
+        },
+        {
+          title: 'Search Intent & Content Depth Matching',
+          description: 'Ensure every page provides complete, authoritative answers to eliminate bounce rate and satisfy Google algorithms.'
+        }
+      ],
+      roadmap: [
+        { stage: 'Month 1', name: 'Keyword Mapping & Intent Audit', detail: 'Mapping all priority products and services to high-intent commercial queries.' },
+        { stage: 'Month 2', name: 'Title, Meta & Heading Overhaul', detail: 'Rewriting titles, metas, and structuring page content for maximum click-through rate.' },
+        { stage: 'Month 3', name: 'Internal Link & Content Siloing', detail: 'Connecting related pages to build strong topical clusters and funnel ranking authority.' },
+        { stage: 'Ongoing', name: 'CTR Testing & SERP Tracking', detail: 'Continuously refining snippets and monitoring Page 1 keyword position jumps.' }
+      ],
+      caseStudyLink: '/case-studies/carrot-sun',
+      caseStudyText: 'Carrot Sun Oil: Reached Average Position 7.2 on Page 1 in 90 Days',
+      faqs: [
+        { q: 'How long does on-page SEO take to show results?', a: 'On-page changes are usually re-crawled by Google within 2 to 4 weeks, with clear ranking and traffic improvements appearing within 30 to 60 days.' },
+        { q: 'Will on-page SEO change my website design?', a: 'No. On-page SEO focuses on text, headings, meta tags, and internal link structure without altering your brand design or layout.' },
+        { q: 'Do you work directly on my CMS?', a: 'Yes. I can implement all on-page optimizations directly inside WordPress, Shopify, Webflow, or provide clear code blueprints.' }
+      ]
+    },
+
+    'link-building': {
+      title: 'High-Authority Link Building (Off-Page SEO)',
+      subtitle: '100% White-Hat Real Backlinks to Outrank Your Competitors',
+      badge: '100% WHITE-HAT',
+      icon: Zap,
+      tagline: 'Get trusted, high-authority websites to link back to your business, giving you the algorithmic power to beat competitors.',
+      problemTitle: 'Why Your Website Is Stuck on Page 2 or Page 3',
+      problemDescription: 'Google treats backlinks as votes of confidence. If competitors have more quality websites linking to them, Google will rank them higher. Low-quality automated spam links get your site banned, which is why only real, safe white-hat links work.',
+      deliverables: [
+        {
+          title: '100% Safe Manual Outreach (Zero Spam Networks)',
+          description: 'Direct outreach to real, relevant blogs and webmasters. No private blog networks (PBNs) or toxic spam links.'
+        },
+        {
+          title: 'High DA / DR Niche Guest Posts',
+          description: 'Publish authoritative, original guest articles on established websites in your industry with natural editorial backlinks.'
+        },
+        {
+          title: 'Competitor Backlink Replication',
+          description: 'Reverse-engineer your top 5 ranking competitors to identify and acquire their best, highest-impact backlinks.'
+        },
+        {
+          title: 'Local Pakistani & Global Business Citations',
+          description: 'Establish consistent NAP profiles across trusted national and international business directories.'
+        },
+        {
+          title: 'Brand Mentions & Digital PR Outreach',
+          description: 'Get your brand featured in news outlets, podcasts, and industry roundups to build lasting algorithmic trust.'
+        },
+        {
+          title: 'Transparent Live Backlink Reporting',
+          description: 'Access a live spreadsheet with every acquired URL, domain metrics, anchor text, and verification date.'
+        }
+      ],
+      roadmap: [
+        { stage: 'Month 1', name: 'Competitor Link Gap Analysis', detail: 'Dissecting competitor backlink profiles and identifying easy-win link sources.' },
+        { stage: 'Month 2', name: 'Foundation Citations & Brand Profiles', detail: 'Building high-trust directory citations and brand authority profiles.' },
+        { stage: 'Month 3', name: 'High-DA Guest Post Outreach', detail: 'Publishing niche-relevant articles on authority websites with contextual links.' },
+        { stage: 'Ongoing', name: 'Continuous Link Velocity & Tracking', detail: 'Acquiring steady monthly backlinks to sustain and grow Page 1 rankings.' }
+      ],
+      caseStudyLink: '/case-studies/2s-lawyers',
+      caseStudyText: '2S Lawyers UAE: +300% Inbound Leads Powered by Authority Backlinks',
+      faqs: [
+        { q: 'Are your backlinks safe from Google penalties?', a: '100% safe. I only use manual white-hat outreach to real websites with genuine traffic, following Google Webmaster guidelines.' },
+        { q: 'What Domain Authority (DA) do the websites have?', a: 'I target authoritative websites with DA 30 to 70+ and verified real organic traffic.' },
+        { q: 'Do backlinks stay live permanently?', a: 'Yes. All acquired guest posts and editorial links are permanent, contextual placements.' }
+      ]
+    },
+
+    'seo-audit': {
+      title: 'Complete Website SEO Audit & Action Plan',
+      subtitle: 'Find Out Exactly What Is Stopping You From Ranking #1',
+      badge: '100+ POINT AUDIT',
+      icon: CheckCircle2,
+      tagline: 'I do a deep check of your website to find the exact errors holding you back, and give you a simple step-by-step plan to rank #1.',
+      problemTitle: 'Why Blind Changes Waste Time & Money',
+      problemDescription: 'Many store owners and businesses spend months tweaking random text or paying for cheap backlinks without understanding why their site is not ranking. A comprehensive professional audit finds the exact roadblocks so you only fix what drives results.',
+      deliverables: [
+        {
+          title: '100+ Point Full Technical Site Inspection',
+          description: 'Deep crawl for redirect loops, 404 broken links, index bloat, crawl traps, and canonical errors.'
+        },
+        {
+          title: 'Top 5 Competitor Ranking & Traffic Breakdown',
+          description: 'Detailed analysis of why your competitors are beating you on Google and what it takes to surpass them.'
+        },
+        {
+          title: 'Low-Hanging Buyer Keyword Opportunities',
+          description: 'Identify keywords where you already sit on Page 2 (positions 11–20) that can be pushed to Page 1 quickly.'
+        },
+        {
+          title: 'Core Web Vitals & Mobile Speed Diagnostics',
+          description: 'Identify slow scripts, uncompressed media, and render bottlenecks delaying page load times.'
+        },
+        {
+          title: 'Prioritized Action Plan (What to Fix First)',
+          description: 'A clear, no-nonsense checklist ranked from highest impact to lowest impact so you see fast ranking gains.'
+        },
+        {
+          title: '15-Minute 1-on-1 Strategy Call on WhatsApp',
+          description: 'Direct consultation where I walk you through the audit findings in plain Grade 5 English and answer all questions.'
+        }
+      ],
+      roadmap: [
+        { stage: 'Day 1-2', name: 'Deep Crawler & GSC Ingestion', detail: 'Running multi-point technical crawls and connecting Search Console performance data.' },
+        { stage: 'Day 3', name: 'Competitor Reverse Engineering', detail: 'Analyzing competitor backlink authority, top ranking pages, and keyword gaps.' },
+        { stage: 'Day 4', name: 'Action Plan & Priority Matrix', detail: 'Compiling the clear, plain-English fix checklist and opportunity roadmap.' },
+        { stage: 'Day 5', name: 'Live WhatsApp Walkthrough', detail: 'Personal 1-on-1 call with Talha to review findings and outline next steps.' }
+      ],
+      caseStudyLink: '/case-studies/hope-enterprises',
+      caseStudyText: 'Hope Enterprises: 10,700 Clicks (+280% Surge) After Fixing Core Bottlenecks',
+      faqs: [
+        { q: 'What do I receive after the audit?', a: 'You receive a clear, plain-English report with a prioritized fix checklist, competitor gap data, and a 1-on-1 strategy call on WhatsApp.' },
+        { q: 'Can you fix the issues found in the audit?', a: 'Yes. Once the audit is complete, we can either implement all fixes for you or hand the blueprint to your in-house developer.' },
+        { q: 'How fast do you deliver the audit?', a: 'The comprehensive audit is delivered within 3 to 5 business days.' }
+      ]
     }
   };
 

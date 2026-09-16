@@ -1,10 +1,10 @@
-﻿import React from 'react';
+import React from 'react';
 import Hero from '../components/Hero';
 import LogoStrip from '../components/LogoStrip';
 import BusinessImpact from '../components/BusinessImpact';
 import CaseStudies from '../components/CaseStudies';
 import Skills from '../components/Skills';
-import AiAdvantage from '../components/AiAdvantage';
+import WhyChooseMe from '../components/WhyChooseMe';
 import About from '../components/About';
 import GoogleReviews from '../components/GoogleReviews';
 import Journey from '../components/Journey';
@@ -30,11 +30,11 @@ export default function HomePage({ onOpenCv }) {
       {/* 04. Featured Real Case Studies & GSC Proof */}
       <CaseStudies />
 
-      {/* 05. Strategic Core Offerings & Deliverables */}
+      {/* 05. Core SEO Services That Bring You Customers & Sales */}
       <Skills />
 
-      {/* 06. How I Use AI & Automation to Out-Execute Traditional Agencies */}
-      <AiAdvantage />
+      {/* 06. Why Choose Talha Ahsan Over Traditional Agencies */}
+      <WhyChooseMe />
 
       {/* 07. ABOUT TALHA AHSAN */}
       <About />

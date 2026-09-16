@@ -425,39 +425,91 @@ export const certificatesList = [
   }
 ];
 
-// Strategic Core Offerings & Deliverables (Trimmed & Focused)
+// Actual Core SEO Services (Industry-Standard like Top Competitors in Lahore & Pakistan)
 export const skills = [
   {
-    id: "ecommerce-seo",
-    title: "E-Commerce & Store SEO",
-    icon: "ShoppingCart",
-    problemSolved: "Spending too much money on ads for small profits?",
-    description: "I rank your products and collections on Google so ready-to-buy customers find your store organically without ad dependency.",
-    tags: ["Shopify & WooCommerce", "Product Rankings", "Organic Buyers"]
-  },
-  {
-    id: "local-seo",
-    title: "Google Maps & Local 3-Pack",
-    icon: "MapPin",
-    problemSolved: "Nearby competitors stealing your local customers?",
-    description: "I rank your business in the Top 3 on Google Maps in your city to bring you steady phone calls, WhatsApp messages, and store visits.",
-    tags: ["Top 3 Google Maps", "Google Business Profile", "Direct Phone Calls"]
+    id: "on-page-seo",
+    title: "On-Page SEO Optimization",
+    icon: "FileText",
+    badge: "PAGE 1 RANKINGS",
+    shortDescription: "I optimize every page, title, heading, and text on your website so Google understands what you sell and ranks you on Page 1.",
+    deliverables: [
+      "High-Intent Buyer Keyword Research",
+      "Click-Winning Title & Meta Descriptions",
+      "Clear H1, H2, H3 Heading Content Structure",
+      "Smart Internal Links Between Pages"
+    ],
+    tags: ["Keywords", "Titles & Meta", "Content Format", "Internal Links"]
   },
   {
     id: "tech-seo",
-    title: "Technical SEO & Website Speed",
+    title: "Technical SEO & Speed Fixes",
     icon: "Cpu",
-    problemSolved: "Website slow or pages not appearing on Google?",
-    description: "I fix hidden website errors, speed up slow pages under 2 seconds, and make sure Google indexes every product and page cleanly.",
-    tags: ["Fast Page Speed", "Zero Index Errors", "Mobile Friendly"]
+    badge: "SUB-2S SPEED",
+    shortDescription: "I fix hidden website errors and make your website load in under 2 seconds so Googlebot crawls and indexes every page smoothly.",
+    deliverables: [
+      "Sub-2.2s Page Speed & Core Web Vitals",
+      "Mobile-Friendly & Layout Shift Fixes",
+      "Google Indexing & 404 Error Cleanup",
+      "Clean XML Sitemaps & Schema Markup"
+    ],
+    tags: ["Fast Speed", "Index Fixes", "Mobile Friendly", "Schema Markup"]
   },
   {
-    id: "ai-seo",
-    title: "AI-Powered Search & Automation",
-    icon: "Sparkles",
-    problemSolved: "Old agencies taking months to give you simple reports?",
-    description: "I use modern AI tools to research customer searches and build ranking topic clusters 5x faster than traditional agencies.",
-    tags: ["5x Faster Execution", "Smart AI Research", "Topical Clusters"]
+    id: "link-building",
+    title: "High-Authority Link Building",
+    icon: "Link",
+    badge: "100% WHITE-HAT",
+    shortDescription: "I get trusted, high-authority websites to link back to your site, giving your business algorithmic trust to beat competitors.",
+    deliverables: [
+      "100% Safe Manual Outreach (Zero Spam)",
+      "High DA / DR Niche-Relevant Guest Posts",
+      "Competitor Backlink Replication",
+      "Brand Mentions & High-Trust Citations"
+    ],
+    tags: ["Real Backlinks", "High DA Posts", "Safe Outreach", "Domain Power"]
+  },
+  {
+    id: "local-seo",
+    title: "Local SEO & Google Maps (GMB)",
+    icon: "MapPin",
+    badge: "CALLS & VISITS",
+    shortDescription: "I rank your physical store or local business in the Top 3 on Google Maps so nearby customers call you and visit your shop.",
+    deliverables: [
+      "Top 3 Google Maps 3-Pack Rankings",
+      "Google Business Profile Setup & Verification",
+      "Local Citations & NAP Consistency",
+      "Automated 5-Star Customer Review Funnel"
+    ],
+    tags: ["Google Maps #1", "More Phone Calls", "Local Reviews", "Shop Visits"]
+  },
+  {
+    id: "ecommerce-seo",
+    title: "E-Commerce SEO (Shopify & Woo)",
+    icon: "ShoppingCart",
+    badge: "SALES & REVENUE",
+    shortDescription: "I rank your products and collections on Google so ready-to-buy customers find your store organically without ad spend.",
+    deliverables: [
+      "Product & Collection Page Rankings",
+      "Category Silo Hierarchy Architecture",
+      "Product Schema with Star Ratings & Prices",
+      "Faceted Filter & Duplicate URL Control"
+    ],
+    tags: ["Shopify & Woo", "Product Rankings", "Organic Sales", "Zero Ad Waste"]
+  },
+  {
+    id: "seo-audit",
+    title: "Complete SEO Audit & Action Plan",
+    icon: "BarChart3",
+    badge: "100+ POINT CHECK",
+    shortDescription: "I do a deep check of your website to find the exact errors holding you back, and give you a simple step-by-step plan to rank #1.",
+    deliverables: [
+      "100+ Point Full Technical Inspection",
+      "Competitor Ranking & Backlink Breakdown",
+      "Missing Keyword Opportunity Checklist",
+      "15-Minute 1-on-1 Consultation on WhatsApp"
+    ],
+    tags: ["Site Health", "Competitor Spy", "Fix Checklist", "Free Strategy"]
   }
 ];
 
@@ -733,56 +785,75 @@ export const selectedBrands = [
 
 export const selectedBrandsCaption = "Selected websites and brands managed through in-house, agency, and remote projects.";
 
-// AI SEO Advantage Section Data in Grade 5 English
-export const aiAdvantageData = {
-  badge: "AI & Automation Advantage",
-  title: "How I Use AI & Automation to Out-Execute Traditional Agencies",
-  subtitle: "Old agencies spend weeks making slow spreadsheets. I use smart AI tools to finish the research in 2 days, so we start getting real visitors to your website much faster.",
-  comparison: [
+// Why Serious Businesses Work With Talha Ahsan (Grade 5 Familiar English)
+export const whyChooseMeData = {
+  badge: "WHY WORK WITH ME",
+  title: "The SEO Expert You Can Actually Trust",
+  subtitle: "No empty promises, no outsourced junior interns, and no confusing 100-page reports. Here is why serious businesses in Lahore, Pakistan, and worldwide choose to work with me.",
+  reasons: [
     {
-      metric: "Finding Customer Searches",
-      traditional: "Takes 2 to 3 weeks of slow manual work and misses many keywords",
-      talhaAi: "Finished in 48 hours using AI scripts to organize 5,000+ searches by real buyer intent"
+      number: "01",
+      title: "Direct Work With Talha (Zero Junior Interns)",
+      badge: "1-on-1 Senior Expert",
+      description: "At large agencies, your website is handed to beginner interns. With me, you work directly with a senior SEO specialist with 3+ years of real search experience."
     },
     {
-      metric: "Finding Website Problems",
-      traditional: "Sends you a confusing 100-page PDF report that nobody understands",
-      talhaAi: "Immediately finds and fixes the exact errors that are blocking your sales"
+      number: "02",
+      title: "100% Safe & White-Hat Google Methods",
+      badge: "Zero Google Penalty Risk",
+      description: "I strictly follow Google's official search guidelines. No dangerous spam backlinks, no fake automated clicks, and no shortcuts that put your website in danger."
     },
     {
-      metric: "Matching What People Want",
-      traditional: "Stuffs the same keyword everywhere, which Google now penalizes",
-      talhaAi: "Matches the exact answers Google's modern AI algorithms are looking for"
+      number: "03",
+      title: "Obsessed With Real Sales & Customer Calls",
+      badge: "Revenue Over Vanity",
+      description: "A graph going up means nothing if your bank account doesn't grow. I target high-intent buyer keywords that bring you real phone calls, WhatsApp messages, and orders."
     },
     {
-      metric: "Who Does The Work",
-      traditional: "Passes your business to junior trainees with little experience",
-      talhaAi: "100% managed by Talha: AI does the fast data work, I guide the real strategy"
+      number: "04",
+      title: "Real Proof You Can Verify (Search Console)",
+      badge: "100% Verified GSC Data",
+      description: "Zero invented numbers or fake reviews. Every result I share comes with real, authenticated Google Search Console data (+280% traffic jump, 10,700 clicks, #1 on Google Maps)."
+    },
+    {
+      number: "05",
+      title: "Fast Execution with Modern Smart Tools",
+      badge: "5x Faster Delivery",
+      description: "While traditional agencies spend 4 weeks building slow spreadsheets, I use modern automated tools to audit your website, find keyword gaps, and deploy fixes in days."
+    },
+    {
+      number: "06",
+      title: "Direct WhatsApp Support & Clear Weekly Reports",
+      badge: "Always Within Reach",
+      description: "No waiting days for email replies. I answer your questions quickly on WhatsApp and send simple, plain-English progress reports so you always know what is happening."
     }
   ],
-  capabilities: [
+  steps: [
     {
-      title: "Smart Keyword Grouping",
-      description: "Groups thousands of searches into clear categories so pages on your website don't compete with each other.",
-      badge: "Fast & Accurate"
+      step: "01",
+      title: "Website Health Check",
+      desc: "I inspect your website and find what errors are stopping you from ranking."
     },
     {
-      title: "Google AI Overview Ready",
-      description: "Sets up your website information cleanly so Google's new AI search answers recommend your brand.",
-      badge: "Modern Search"
+      step: "02",
+      title: "Buyer Keyword Plan",
+      desc: "We pick the exact search terms paying customers use when ready to buy."
     },
     {
-      title: "Competitor Topic Discovery",
-      description: "Shows exactly what topics your competitors are ranking for so we can create better pages and win.",
-      badge: "Market Research"
+      step: "03",
+      title: "On-Page & Speed Fixes",
+      desc: "I optimize your page titles, headings, and make your site load in under 2 seconds."
     },
     {
-      title: "Internal Link Boost",
-      description: "Connects your pages smartly so authority flows directly to the products or services you want to sell.",
-      badge: "More Sales"
+      step: "04",
+      title: "Authority Links & Growth",
+      desc: "We build trusted backlinks, track rankings on GSC, and scale your organic sales."
     }
   ]
 };
+
+// Backward-compatible alias
+export const aiAdvantageData = whyChooseMeData;
 
 // Google Reviews Section Data
 export const googleReviewsData = {
