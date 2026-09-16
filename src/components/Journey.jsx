@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, MapPin, CheckCircle2, Zap } from 'lucide-react';
+import { Sparkles, MapPin, CheckCircle2, Zap, ExternalLink } from 'lucide-react';
 import { experiences } from '../data/portfolioData';
 
 export default function Journey() {
@@ -83,7 +83,19 @@ export default function Journey() {
                       </h3>
                       
                       <div className="flex flex-wrap items-center gap-2.5 font-mono text-xs text-[#A898C8] mb-4 font-semibold">
-                        <span className="text-[#E9D8FD] font-bold">{exp.company}</span>
+                        {exp.linkedin ? (
+                          <a
+                            href={exp.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#E9D8FD] hover:text-[#A78BFA] font-bold underline decoration-[#7C3AED] hover:decoration-white transition-colors inline-flex items-center gap-1 group/link"
+                          >
+                            <span>{exp.company}</span>
+                            <ExternalLink className="w-3 h-3 text-[#A78BFA] group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                          </a>
+                        ) : (
+                          <span className="text-[#E9D8FD] font-bold">{exp.company}</span>
+                        )}
                         <span>•</span>
                         <span className="flex items-center gap-1 text-[#34D399]">
                           <MapPin className="w-3.5 h-3.5" /> {exp.location}

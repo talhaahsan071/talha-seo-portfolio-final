@@ -1,33 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Home Page -->
   <url>
     <loc>https://talhaahsan.vercel.app/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- High-Intent Commercial Location Landing Pages -->
   <url>
-    <loc>https://talhaahsan.vercel.app/#about</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://talhaahsan.vercel.app/seo-expert-in-lahore</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
   </url>
   <url>
-    <loc>https://talhaahsan.vercel.app/#journey</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://talhaahsan.vercel.app/seo-expert-in-pakistan</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
   </url>
+
+  <!-- Case Studies Directory & Projects -->
   <url>
-    <loc>https://talhaahsan.vercel.app/#case-studies</loc>
-    <lastmod>2026-09-04</lastmod>
+    <loc>https://talhaahsan.vercel.app/case-studies</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://talhaahsan.vercel.app/#contact</loc>
-    <lastmod>2026-09-04</lastmod>
+    <loc>https://talhaahsan.vercel.app/case-studies/hope-enterprises</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://talhaahsan.vercel.app/case-studies/carrot-sun</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://talhaahsan.vercel.app/case-studies/2s-lawyers</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://talhaahsan.vercel.app/case-studies/hope-local-gmb</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Services Directory & Offerings -->
+  <url>
+    <loc>https://talhaahsan.vercel.app/services</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://talhaahsan.vercel.app/services/ecommerce-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://talhaahsan.vercel.app/services/local-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://talhaahsan.vercel.app/services/tech-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://talhaahsan.vercel.app/services/ai-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
   </url>
 </urlset>

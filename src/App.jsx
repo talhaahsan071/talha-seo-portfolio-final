@@ -1,26 +1,18 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import BusinessImpact from './components/BusinessImpact';
-import About from './components/About';
-import EntityBio from './components/EntityBio';
-import Journey from './components/Journey';
-import Skills from './components/Skills';
-import Tools from './components/Tools';
-import AiSeoLab from './components/AiSeoLab';
-import CaseStudies from './components/CaseStudies';
-import SeoInsights from './components/SeoInsights';
-import LiveSerpTool from './components/LiveSerpTool';
-import Certifications from './components/Certifications';
-import Process from './components/Process';
-import Testimonials from './components/Testimonials';
-import FaqSection from './components/FaqSection';
-import CtaBanner from './components/CtaBanner';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import CvModal from './components/CvModal';
 import SitemapModal from './components/SitemapModal';
 import RobotsModal from './components/RobotsModal';
+import HomePage from './pages/HomePage';
+import LahoreSeoPage from './pages/LahoreSeoPage';
+import PakistanSeoPage from './pages/PakistanSeoPage';
+import CaseStudiesArchivePage from './pages/CaseStudiesArchivePage';
+import CaseStudyDetailPage from './pages/CaseStudyDetailPage';
+import ServicesArchivePage from './pages/ServicesArchivePage';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 
 export default function App() {
   const [isCvOpen, setIsCvOpen] = useState(false);
@@ -28,74 +20,34 @@ export default function App() {
   const [isRobotsOpen, setIsRobotsOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white text-[#0F0728] font-sans antialiased selection:bg-[#7C3AED] selection:text-white">
-      {/* Navigation Header */}
-      <Navbar onOpenCv={() => setIsCvOpen(true)} />
+    <BrowserRouter>
+      <ScrollToTop />
+      <div className="min-h-screen bg-white text-[#0F0728] font-sans antialiased selection:bg-[#7C3AED] selection:text-white pb-14 sm:pb-0">
+        {/* Navigation Header */}
+        <Navbar onOpenCv={() => setIsCvOpen(true)} />
 
-      {/* Main Content Sections */}
-      <main>
-        {/* 01. Signature SERP Hero */}
-        <Hero onOpenCv={() => setIsCvOpen(true)} />
+        {/* Dynamic Route Pages */}
+        <Routes>
+          <Route path="/" element={<HomePage onOpenCv={() => setIsCvOpen(true)} />} />
+          <Route path="/seo-expert-in-lahore" element={<LahoreSeoPage />} />
+          <Route path="/seo-expert-in-pakistan" element={<PakistanSeoPage />} />
+          <Route path="/case-studies" element={<CaseStudiesArchivePage />} />
+          <Route path="/case-studies/:id" element={<CaseStudyDetailPage />} />
+          <Route path="/services" element={<ServicesArchivePage />} />
+          <Route path="/services/:id" element={<ServiceDetailPage />} />
+        </Routes>
 
-        {/* 02. Measurable Business Impact */}
-        <BusinessImpact />
+        {/* Global Footer */}
+        <Footer 
+          onOpenSitemap={() => setIsSitemapOpen(true)} 
+          onOpenRobots={() => setIsRobotsOpen(true)} 
+        />
 
-        {/* 03. About Section */}
-        <About />
-
-        {/* 04. Official Entity Profile & Knowledge Hub (Engineered for Google AI Overviews) */}
-        <EntityBio />
-
-        {/* 05. Problem-Solving SEO Services */}
-        <Skills />
-
-        {/* 06. The Top 1% SEO Advantage & Stack */}
-        <Tools />
-
-        {/* 07. Interactive AI SEO Automation Lab */}
-        <AiSeoLab />
-
-        {/* 08. Verified Case Studies with GSC Proof */}
-        <CaseStudies />
-
-        {/* 09. Practitioner Playbooks & SEO Insights */}
-        <SeoInsights />
-
-        {/* 10. Interactive Live SERP & SEO Diagnostic Simulator */}
-        <LiveSerpTool />
-
-        {/* 11. Career Progression Timeline */}
-        <Journey />
-
-        {/* 12. Certifications & Academic Credentials */}
-        <Certifications />
-
-        {/* 13. 5-Stage Methodology Process */}
-        <Process />
-
-        {/* 14. Regional & Enterprise Trust Brands */}
-        <Testimonials />
-
-        {/* 15. Frequently Asked Questions & AI Overviews Directory */}
-        <FaqSection />
-
-        {/* 14. Action Banner */}
-        <CtaBanner />
-
-        {/* 15. Contact Section & Direct Channels */}
-        <Contact />
-      </main>
-
-      {/* Footer */}
-      <Footer 
-        onOpenSitemap={() => setIsSitemapOpen(true)} 
-        onOpenRobots={() => setIsRobotsOpen(true)} 
-      />
-
-      {/* Interactive Modals */}
-      <CvModal isOpen={isCvOpen} onClose={() => setIsCvOpen(false)} />
-      <SitemapModal isOpen={isSitemapOpen} onClose={() => setIsSitemapOpen(false)} />
-      <RobotsModal isOpen={isRobotsOpen} onClose={() => setIsRobotsOpen(false)} />
-    </div>
+        {/* Interactive Modals */}
+        <CvModal isOpen={isCvOpen} onClose={() => setIsCvOpen(false)} />
+        <SitemapModal isOpen={isSitemapOpen} onClose={() => setIsSitemapOpen(false)} />
+        <RobotsModal isOpen={isRobotsOpen} onClose={() => setIsRobotsOpen(false)} />
+      </div>
+    </BrowserRouter>
   );
 }

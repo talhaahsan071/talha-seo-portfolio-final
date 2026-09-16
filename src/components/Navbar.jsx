@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, FileText, Search } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, ArrowUpRight, FileText, MapPin } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Navbar({ onOpenCv }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,15 +20,16 @@ export default function Navbar({ onOpenCv }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isHome = location.pathname === '/';
+
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Solutions', href: '#skills' },
-    { name: 'Why Me', href: '#tools' },
-    { name: 'AI Lab', href: '#ai-lab' },
-    { name: 'Case Studies', href: '#case-studies' },
-    { name: 'Insights', href: '#insights' },
-    { name: 'FAQ', href: '#faq' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', path: '/', isRoute: true },
+    { name: 'Lahore SEO', path: '/seo-expert-in-lahore', isRoute: true, highlight: true },
+    { name: 'Pakistan SEO', path: '/seo-expert-in-pakistan', isRoute: true },
+    { name: 'Case Studies', path: '/case-studies', isRoute: true },
+    { name: 'Services', path: '/services', isRoute: true },
+    { name: 'Google Reviews', path: isHome ? '#google-reviews' : '/#google-reviews', isRoute: false },
+    { name: 'Contact', path: isHome ? '#contact' : '/#contact', isRoute: false },
   ];
 
   return (
@@ -38,7 +41,7 @@ export default function Navbar({ onOpenCv }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Wordmark prioritizing SEO Expert */}
-        <a href="#" className="flex items-center gap-3 group focus:outline-none">
+        <Link to="/" className="flex items-center gap-3 group focus:outline-none">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#D946EF] p-0.5 shadow-md shadow-[#7C3AED]/20 transition-transform group-hover:scale-105">
             <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-heading text-lg font-bold text-[#7C3AED]">
               T
@@ -55,19 +58,41 @@ export default function Navbar({ onOpenCv }) {
             </div>
             <span className="font-mono text-[10px] text-[#6B5B8D] tracking-wide">SEO Specialist &bull; 360° Digital Growth</span>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="font-mono text-xs font-bold text-[#3B2B5C] hover:text-[#7C3AED] transition-colors tracking-wide py-1"
-            >
-              {link.name}
-            </a>
-          ))}
+        <nav className="hidden lg:flex items-center gap-5">
+          {navLinks.map((link) => {
+            if (link.isRoute) {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className={`font-mono text-xs font-bold tracking-wide py-1 transition-colors flex items-center gap-1 ${
+                    link.highlight
+                      ? 'px-2.5 py-1 rounded-lg bg-[#F3E8FF] text-[#7C3AED] border border-[#E9D8FD] hover:bg-[#7C3AED] hover:text-white'
+                      : isActive
+                        ? 'text-[#7C3AED]'
+                        : 'text-[#3B2B5C] hover:text-[#7C3AED]'
+                  }`}
+                >
+                  {link.highlight && <MapPin className="w-3 h-3 text-[#059669]" />}
+                  <span>{link.name}</span>
+                </Link>
+              );
+            }
+
+            return (
+              <a
+                key={link.name}
+                href={link.path}
+                className="font-mono text-xs font-bold text-[#3B2B5C] hover:text-[#7C3AED] transition-colors tracking-wide py-1"
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </nav>
 
         {/* Right CTA / Action Buttons */}
@@ -115,16 +140,30 @@ export default function Navbar({ onOpenCv }) {
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-b border-[#E9D8FD] px-4 pt-3 pb-6 space-y-2 shadow-xl animate-in slide-in-from-top duration-200">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="block font-mono text-sm font-bold text-[#0F0728] hover:text-[#7C3AED] py-2 px-3 rounded-lg hover:bg-[#F8F4FF] transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            if (link.isRoute) {
+              return (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block font-mono text-sm font-bold text-[#0F0728] hover:text-[#7C3AED] py-2 px-3 rounded-lg hover:bg-[#F8F4FF] transition-colors"
+                >
+                  {link.highlight ? `📍 ${link.name}` : link.name}
+                </Link>
+              );
+            }
+            return (
+              <a
+                key={link.name}
+                href={link.path}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block font-mono text-sm font-bold text-[#0F0728] hover:text-[#7C3AED] py-2 px-3 rounded-lg hover:bg-[#F8F4FF] transition-colors"
+              >
+                {link.name}
+              </a>
+            );
+          })}
           <div className="pt-3 border-t border-[#E9D8FD] flex flex-col gap-2">
             <button
               onClick={() => {

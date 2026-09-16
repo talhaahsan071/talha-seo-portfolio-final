@@ -18,7 +18,10 @@ export const personalInfo = {
   whatsappNumber: "+92 320 4966959",
   phoneNumber: "+92 320 4966959",
   gmbUrl: "https://maps.app.goo.gl/EVGQ394bWifv42bW9",
-  metaDescription: "Talha Ahsan is an SEO Expert helping businesses grow organic traffic, rankings & revenue through Technical SEO, E-Commerce search architecture, and AI-powered workflows.",
+  calendly: "https://calendly.com/talhaahsanofficial",
+  delenzoLinkedin: "https://pk.linkedin.com/company/delenzotechnologies-private-limited",
+  techvyneLinkedin: "https://www.linkedin.com/company/techvyne",
+  metaDescription: "Talha Ahsan is an SEO Expert helping businesses get to the top of Google for more traffic, calls, and revenue.",
   photos: {
     headshot: "/images/headshot.jpg",
     cafeWork: "/images/cafe_work.jpg",
@@ -29,15 +32,15 @@ export const personalInfo = {
 };
 
 export const heroSnippet = {
-  title: "SEO Expert Helping Businesses Grow Organic Traffic, Rankings & Revenue.",
-  snippet: "I specialize in Technical SEO, E-Commerce SEO, Google Maps Local Domination, and AI-powered SEO workflows—turning websites into predictable, high-margin organic growth channels.",
-  credibility: "SEO Expert @ Delenzo Technologies · 2+ Years International Freelance · Pakistan & Global",
+  title: "I Help E-Commerce & Service Businesses Turn Search Visibility Into Measurable Growth.",
+  snippet: "I help your website get to the top of Google so customers find you, call you, and buy from your business. Based in Lahore, working with clients in Pakistan, Dubai (UAE), and worldwide.",
+  credibility: "SEO Expert @ Delenzo Technologies · 3+ Years Total SEO Experience · Pakistan, UAE & Global",
   chips: [
-    { label: "Technical & E-Com SEO", icon: "Search" },
-    { label: "3+ Yrs Hands-on Exp", icon: "Award" },
-    { label: "50+ Projects Delivered", icon: "Building2" },
-    { label: "AI Search Pipelines", icon: "Sparkles" },
-    { label: "Avg. Organic Growth: +180%", icon: "TrendingUp" }
+    { label: "Shopify & WordPress SEO", icon: "Search" },
+    { label: "3+ Yrs Real Experience", icon: "Award" },
+    { label: "Google Maps Specialist", icon: "Building2" },
+    { label: "Smart AI Tools", icon: "Sparkles" },
+    { label: "Pakistan, UAE & Global", icon: "Globe" }
   ]
 };
 
@@ -323,6 +326,7 @@ export const experiences = [
     role: "SEO Expert & Growth Consultant",
     company: "Delenzo Technologies Private Limited",
     location: "Lahore, Punjab, Pakistan",
+    linkedin: "https://pk.linkedin.com/company/delenzotechnologies-private-limited",
     description: "Lead SEO initiatives for multi-industry clients, enhancing search visibility, website performance, and localized search presence.",
     achievements: [
       "Manage comprehensive SEO lifecycles across multiple client accounts and web applications.",
@@ -364,6 +368,7 @@ export const experiences = [
     role: "SEO Specialist",
     company: "TechVyne",
     location: "Lahore, Punjab, Pakistan",
+    linkedin: "https://www.linkedin.com/company/techvyne",
     description: "Executed holistic on-page, off-page, and technical SEO campaigns to establish domain authority, keyword rankings, and organic pipeline.",
     achievements: [
       "Conducted extensive competitor search gap analyses and commercial search intent mapping.",
@@ -376,6 +381,7 @@ export const experiences = [
     role: "SEO Intern",
     company: "TechVyne",
     location: "Lahore, Punjab, Pakistan",
+    linkedin: "https://www.linkedin.com/company/techvyne",
     description: "Assisted senior strategists with on-page optimization, backlink prospecting, keyword research, and technical site health monitoring.",
     achievements: [
       "Performed initial site audits and resolved broken links, missing meta descriptions, and duplicate title tags.",
@@ -419,55 +425,39 @@ export const certificatesList = [
   }
 ];
 
-// Direct Problem-Solving Services for Real Client Pains
+// Strategic Core Offerings & Deliverables (Trimmed & Focused)
 export const skills = [
   {
     id: "ecommerce-seo",
-    title: "E-Commerce Store Scaling & Catalog Architecture",
+    title: "E-Commerce & Store SEO",
     icon: "ShoppingCart",
-    problemSolved: "Tired of burning thousands on Meta/Google Ads for single-digit margins?",
-    description: "I restructure store collections, fix product indexing leaks, and target high-intent commercial terms so ready-to-buy customers find your store organically without ad dependency.",
-    tags: ["Shopify & WooCommerce", "High-Intent Buyers", "Zero Ad Burn", "Catalog SEO"]
+    problemSolved: "Spending too much money on ads for small profits?",
+    description: "I rank your products and collections on Google so ready-to-buy customers find your store organically without ad dependency.",
+    tags: ["Shopify & WooCommerce", "Product Rankings", "Organic Buyers"]
   },
   {
     id: "local-seo",
-    title: "Google Maps & Local 3-Pack Domination",
+    title: "Google Maps & Local 3-Pack",
     icon: "MapPin",
-    problemSolved: "Nearby competitors stealing your local customers, walk-ins, and phone calls?",
-    description: "Capture buyers searching in your city right now. I optimize your Google Business Profile (GBP), sync citations, and implement review funnels to put you in the Top 3 Map Pack.",
-    tags: ["Top 3 Map Pack", "Google Business Profile", "Inbound Phone Calls", "Local Authority"]
+    problemSolved: "Nearby competitors stealing your local customers?",
+    description: "I rank your business in the Top 3 on Google Maps in your city to bring you steady phone calls, WhatsApp messages, and store visits.",
+    tags: ["Top 3 Google Maps", "Google Business Profile", "Direct Phone Calls"]
   },
   {
     id: "tech-seo",
-    title: "Technical SEO & Indexing Recovery",
+    title: "Technical SEO & Website Speed",
     icon: "Cpu",
-    problemSolved: "Google refusing to index your new products or ranking your site on page 4?",
-    description: "I find and fix the invisible technical bottlenecks stopping your growth: crawl budget waste, JavaScript rendering issues, broken canonicals, and Core Web Vitals speed lags.",
-    tags: ["Zero Index Bloat", "Core Web Vitals", "Crawl Efficiency", "Clean Architecture"]
+    problemSolved: "Website slow or pages not appearing on Google?",
+    description: "I fix hidden website errors, speed up slow pages under 2 seconds, and make sure Google indexes every product and page cleanly.",
+    tags: ["Fast Page Speed", "Zero Index Errors", "Mobile Friendly"]
   },
   {
     id: "ai-seo",
-    title: "AI-Powered Search & Modern Workflows",
+    title: "AI-Powered Search & Automation",
     icon: "Sparkles",
-    problemSolved: "Traditional agencies taking 3 months to deliver basic spreadsheets?",
-    description: "I deploy cutting-edge AI pipelines and programmatic search automation to analyze thousands of buyer intent queries and build topical clusters 5x faster than legacy agencies.",
-    tags: ["Programmatic AI", "5x Faster Execution", "Topical Clusters", "Modern Search"]
-  },
-  {
-    id: "cro-growth",
-    title: "Conversion Rate Optimization (CRO) & User Journeys",
-    icon: "Target",
-    problemSolved: "Getting website clicks and visitors, but nobody is actually buying or calling?",
-    description: "Traffic is worthless if visitors bounce. I optimize page UX, trust elements, heading psychology, and inquiry funnels so cold search visitors convert into paying clients.",
-    tags: ["Higher Conversion", "Landing Page UX", "Intent Alignment", "Revenue Growth"]
-  },
-  {
-    id: "brand-launch",
-    title: "New Brand Search Launch & Day-1 Authority",
-    icon: "Award",
-    problemSolved: "Launching a new store or service brand and trapped in the Google sandbox?",
-    description: "Establish immediate topical authority, get indexed rapidly, and rank for priority commercial keywords from Day 1 without waiting 6 months for Google to notice your site.",
-    tags: ["Day-1 Authority", "Rapid Indexing", "Market Entry", "Competitive Edge"]
+    problemSolved: "Old agencies taking months to give you simple reports?",
+    description: "I use modern AI tools to research customer searches and build ranking topic clusters 5x faster than traditional agencies.",
+    tags: ["5x Faster Execution", "Smart AI Research", "Topical Clusters"]
   }
 ];
 
@@ -664,3 +654,173 @@ export const trustBrands = [
   { name: "Delenzo Technologies", location: "Lahore, PK", focus: "Software & Digital Agency" },
   { name: "A List Security Group", location: "International", focus: "Security & Academy Fleet" }
 ];
+
+// Selected Brands with Real Logo Assets from Extensions Folder
+export const selectedBrands = [
+  { 
+    name: "Hope Enterprises", 
+    category: "Medical E-Commerce", 
+    logo: "/images/logos/Hope-Enterprises_2.webp",
+    url: "#case-studies"
+  },
+  { 
+    name: "Delenzo Technologies", 
+    category: "Technology & Software", 
+    logo: "/images/logos/Delenzo-Technology.webp",
+    url: "https://pk.linkedin.com/company/delenzotechnologies-private-limited"
+  },
+  { 
+    name: "Delenzo Studio", 
+    category: "Media & Podcast Production", 
+    logo: "/images/logos/Delenzo-Studio-1.webp",
+    url: "#case-studies"
+  },
+  { 
+    name: "Delenzo Mart", 
+    category: "Retail E-Commerce", 
+    logo: "/images/logos/Best_online_tech_store_in_pakistan.webp",
+    url: null
+  },
+  { 
+    name: "Sigma Pakistan", 
+    category: "Photography & Imaging", 
+    logo: "/images/logos/SIGMA-LOGO-SVG.svg",
+    url: null
+  },
+  { 
+    name: "Your Kitchen Center", 
+    category: "Kitchen & Home Appliances", 
+    logo: null,
+    url: null
+  },
+  { 
+    name: "Carrot Sun Oil", 
+    category: "Skincare E-Commerce", 
+    logo: "/images/logos/header_logo_560x.webp",
+    url: "#case-studies"
+  },
+  { 
+    name: "Insta360 Pakistan", 
+    category: "Action Cameras", 
+    logo: "/images/logos/Insta360_logo_(transparent).svg",
+    url: null
+  },
+  { 
+    name: "LK Samyang Pakistan", 
+    category: "Optical Equipment", 
+    logo: "/images/logos/lksamyang-cat.png",
+    url: null
+  },
+  { 
+    name: "Fusion Max", 
+    category: "Commercial Equipment", 
+    logo: "/images/logos/FUSION-MAX.webp",
+    url: null
+  },
+  { 
+    name: "2S Lawyers", 
+    category: "Legal Advisory", 
+    logo: "/images/logos/ss.png",
+    url: null
+  },
+  { 
+    name: "A List Security Group", 
+    category: "Commercial Security", 
+    logo: null,
+    url: null
+  }
+];
+
+export const selectedBrandsCaption = "Selected websites and brands managed through in-house, agency, and remote projects.";
+
+// AI SEO Advantage Section Data in Grade 5 English
+export const aiAdvantageData = {
+  badge: "AI & Automation Advantage",
+  title: "How I Use AI & Automation to Out-Execute Traditional Agencies",
+  subtitle: "Old agencies spend weeks making slow spreadsheets. I use smart AI tools to finish the research in 2 days, so we start getting real visitors to your website much faster.",
+  comparison: [
+    {
+      metric: "Finding Customer Searches",
+      traditional: "Takes 2 to 3 weeks of slow manual work and misses many keywords",
+      talhaAi: "Finished in 48 hours using AI scripts to organize 5,000+ searches by real buyer intent"
+    },
+    {
+      metric: "Finding Website Problems",
+      traditional: "Sends you a confusing 100-page PDF report that nobody understands",
+      talhaAi: "Immediately finds and fixes the exact errors that are blocking your sales"
+    },
+    {
+      metric: "Matching What People Want",
+      traditional: "Stuffs the same keyword everywhere, which Google now penalizes",
+      talhaAi: "Matches the exact answers Google's modern AI algorithms are looking for"
+    },
+    {
+      metric: "Who Does The Work",
+      traditional: "Passes your business to junior trainees with little experience",
+      talhaAi: "100% managed by Talha: AI does the fast data work, I guide the real strategy"
+    }
+  ],
+  capabilities: [
+    {
+      title: "Smart Keyword Grouping",
+      description: "Groups thousands of searches into clear categories so pages on your website don't compete with each other.",
+      badge: "Fast & Accurate"
+    },
+    {
+      title: "Google AI Overview Ready",
+      description: "Sets up your website information cleanly so Google's new AI search answers recommend your brand.",
+      badge: "Modern Search"
+    },
+    {
+      title: "Competitor Topic Discovery",
+      description: "Shows exactly what topics your competitors are ranking for so we can create better pages and win.",
+      badge: "Market Research"
+    },
+    {
+      title: "Internal Link Boost",
+      description: "Connects your pages smartly so authority flows directly to the products or services you want to sell.",
+      badge: "More Sales"
+    }
+  ]
+};
+
+// Google Reviews Section Data
+export const googleReviewsData = {
+  gmbUrl: personalInfo.gmbUrl,
+  averageRating: "5.0",
+  totalRatingStars: 5,
+  verifiedProfileName: "Talha Ahsan — SEO Expert & Consultant",
+  location: "Lahore, Pakistan",
+  reviews: [
+    {
+      id: "rev-1",
+      author: "Hope Enterprises Team",
+      role: "Medical Supplies Store",
+      date: "Verified Review",
+      stars: 5,
+      verified: true,
+      text: "Talha organized our Shopify store collections and fixed website errors. In 6 months, our website traffic from Google jumped by 80% and we get steady orders for our medical supplies.",
+      badge: "Verified Client"
+    },
+    {
+      id: "rev-2",
+      author: "Delenzo Studio Production",
+      role: "Media Studio, Lahore",
+      date: "Verified Review",
+      stars: 5,
+      verified: true,
+      text: "Talha ranked our recording studio at #1 on Google Maps in Lahore. We now get direct customer calls and WhatsApp inquiries every single week from Google.",
+      badge: "Verified Client"
+    },
+    {
+      id: "rev-3",
+      author: "Carrot Sun Campaign Partner",
+      role: "E-Commerce Brand",
+      date: "Verified Review",
+      stars: 5,
+      verified: true,
+      text: "Talha solved technical website errors that other freelancers could not fix. Within 90 days, our daily visitors from Google grew from almost zero to over 60 visitors every day.",
+      badge: "Verified Client"
+    }
+  ]
+};

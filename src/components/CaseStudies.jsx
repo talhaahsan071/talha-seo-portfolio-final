@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   TrendingUp, 
@@ -74,76 +75,77 @@ export default function CaseStudies() {
           })}
         </div>
 
-        {/* Case Study Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {/* Case Study Cards Grid - Compact 3-Column Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {filteredStudies.map((study, idx) => (
             <motion.div
               key={study.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4, delay: idx * 0.08 }}
+              viewport={{ once: true, margin: "-30px" }}
+              transition={{ duration: 0.35, delay: idx * 0.05 }}
               onClick={() => {
                 setSelectedStudy(study);
                 setIsZoomedImage(false);
               }}
-              className="group relative bg-[#F8F4FF] hover:bg-white border border-[#E9D8FD] hover:border-[#7C3AED] rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between cursor-pointer shadow-sm hover:shadow-2xl hover:shadow-[#7C3AED]/15 hover:-translate-y-1.5"
+              className="group relative bg-[#F8F4FF] hover:bg-white border border-[#E9D8FD] hover:border-[#7C3AED] rounded-2xl overflow-hidden transition-all duration-300 flex flex-col justify-between cursor-pointer shadow-xs hover:shadow-xl hover:shadow-[#7C3AED]/12 hover:-translate-y-1"
             >
               <div>
-                {/* GSC / Screenshot Header Preview */}
+                {/* GSC / Screenshot Header Preview - Compact */}
                 {study.image && (
-                  <div className="relative h-56 sm:h-64 overflow-hidden border-b border-[#E9D8FD] bg-[#0F0728]/5">
+                  <div className="relative h-40 sm:h-44 overflow-hidden border-b border-[#E9D8FD] bg-[#0F0728]/5">
                     <img 
                       src={study.image} 
                       alt={study.client}
-                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0F0728]/60 via-transparent to-transparent pointer-events-none" />
                     
                     {/* Top Badges */}
-                    <div className="absolute top-3 left-3 flex items-center gap-2">
-                      <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-[#E9D8FD] font-mono text-[11px] text-[#7C3AED] font-bold shadow-sm flex items-center gap-1">
-                        <ShieldCheck className="w-3.5 h-3.5 text-[#059669]" /> Verified Report
+                    <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+                      <span className="px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-md border border-[#E9D8FD] font-mono text-[10px] text-[#7C3AED] font-bold shadow-xs flex items-center gap-1">
+                        <ShieldCheck className="w-3 h-3 text-[#059669]" /> Verified
                       </span>
-                      <span className="font-mono text-[10px] uppercase font-bold px-2.5 py-1 rounded-full bg-[#0F0728]/80 text-white backdrop-blur-md">
+                      <span className="font-mono text-[9px] uppercase font-bold px-2 py-0.5 rounded-full bg-[#0F0728]/80 text-white backdrop-blur-md">
                         CASE 0{idx + 1}
                       </span>
                     </div>
 
-                    <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-[#E9D8FD] font-mono text-[10px] text-[#0F0728] font-bold shadow-sm">
+                    <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-md border border-[#E9D8FD] font-mono text-[9px] text-[#0F0728] font-bold shadow-xs">
                       {study.category.split('/')[0]}
                     </div>
 
                     {/* Hover Click To Inspect Overlay */}
-                    <div className="absolute inset-0 bg-[#0F0728]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-xs">
-                      <div className="px-4 py-2 rounded-xl bg-white text-[#7C3AED] font-mono text-xs font-bold shadow-xl flex items-center gap-2">
-                        <ZoomIn className="w-4 h-4" />
-                        <span>Inspect Full Strategy &amp; GSC Data</span>
+                    <div className="absolute inset-0 bg-[#0F0728]/45 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-xs">
+                      <div className="px-3 py-1.5 rounded-lg bg-white text-[#7C3AED] font-mono text-[11px] font-bold shadow-lg flex items-center gap-1.5">
+                        <ZoomIn className="w-3.5 h-3.5" />
+                        <span>Inspect Case Study &amp; Data</span>
                       </div>
                     </div>
                   </div>
                 )}
 
-                <div className="p-6 sm:p-8">
+                <div className="p-4 sm:p-5">
                   {/* SERP Breadcrumb URL Line */}
-                  <div className="flex items-center gap-1.5 font-mono text-xs text-[#6B5B8D] mb-3 truncate">
-                    <Lock className="w-3.5 h-3.5 text-[#059669] shrink-0" />
-                    <span className="text-[#0F0728] font-bold">{study.url}</span>
+                  <div className="flex items-center gap-1 font-mono text-[11px] text-[#6B5B8D] mb-2 truncate">
+                    <Lock className="w-3 h-3 text-[#059669] shrink-0" />
+                    <span className="text-[#0F0728] font-bold truncate">{study.url}</span>
                   </div>
 
                   {/* Metric Headline Row with Sparkline SVG */}
-                  <div className="flex items-center justify-between border-b border-[#E9D8FD] pb-5 mb-5">
+                  <div className="flex items-center justify-between border-b border-[#E9D8FD] pb-3 mb-3">
                     <div>
-                      <span className="font-heading text-2xl sm:text-3xl font-extrabold text-[#7C3AED] group-hover:text-[#D946EF] transition-colors">
+                      <span className="font-heading text-xl sm:text-2xl font-extrabold text-[#7C3AED] group-hover:text-[#D946EF] transition-colors">
                         {study.metric}
                       </span>
-                      <p className="font-mono text-xs text-[#0F0728] font-bold mt-1">
+                      <p className="font-mono text-[11px] text-[#0F0728] font-bold mt-0.5">
                         {study.metricLabel}
                       </p>
                     </div>
 
                     {/* Sparkline Trend SVG */}
-                    <div className="w-24 h-12 flex items-center justify-center p-1.5 bg-white border border-[#E9D8FD] rounded-xl shadow-xs">
+                    <div className="w-20 h-9 flex items-center justify-center p-1 bg-white border border-[#E9D8FD] rounded-lg shadow-2xs">
                       <svg className="w-full h-full overflow-visible" viewBox="0 0 100 40">
                         <path
                           d={`M 0 ${40 - (study.sparkline[0] * 0.22)} L ${study.sparkline.map((val, i) => `${(i / (study.sparkline.length - 1)) * 100} ${40 - (val * 0.22)}`).join(' L ')}`}
@@ -158,37 +160,48 @@ export default function CaseStudies() {
                   </div>
 
                   {/* Client Name & Location */}
-                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0F0728] mb-1">
+                  <h3 className="font-heading text-lg sm:text-xl font-bold text-[#0F0728] mb-1">
                     {study.client}
                   </h3>
-                  <p className="font-mono text-xs text-[#7C3AED] mb-3 flex items-center gap-1 font-bold">
-                    <MapPin className="w-3.5 h-3.5 text-[#059669]" /> {study.location}
+                  <p className="font-mono text-[11px] text-[#7C3AED] mb-2 flex items-center gap-1 font-bold">
+                    <MapPin className="w-3 h-3 text-[#059669]" /> {study.location}
                   </p>
 
-                  {/* Summary */}
-                  <p className="font-sans text-sm text-[#3B2B5C] line-clamp-3 leading-relaxed mb-6 font-medium">
+                  {/* Summary - Compact & Readable */}
+                  <p className="font-sans text-xs sm:text-sm text-[#3B2B5C] line-clamp-2 leading-relaxed mb-3 font-medium">
                     {study.summary}
                   </p>
                 </div>
               </div>
 
               {/* Card Footer tags & action */}
-              <div className="p-6 sm:p-8 pt-0 border-t border-[#E9D8FD] space-y-3">
-                <div className="flex flex-wrap gap-1.5 font-mono text-[10px] pt-4">
+              <div className="p-4 sm:p-5 pt-0 border-t border-[#E9D8FD] space-y-2.5">
+                <div className="flex flex-wrap gap-1 font-mono text-[9px] pt-3">
                   {study.tags.map((tag, tIdx) => (
-                    <span key={tIdx} className="px-2.5 py-1 rounded-lg bg-white text-[#3B2B5C] border border-[#E9D8FD] font-bold shadow-2xs">
+                    <span key={tIdx} className="px-2 py-0.5 rounded-md bg-white text-[#3B2B5C] border border-[#E9D8FD] font-bold shadow-2xs">
                       #{tag}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between font-mono text-xs text-[#7C3AED] group-hover:text-[#0F0728] font-bold pt-2">
-                  <span>Deep Dive Case Study &amp; Proof</span>
-                  <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1 text-[#7C3AED]" />
+                <div className="flex items-center justify-between font-mono text-[11px] text-[#7C3AED] group-hover:text-[#0F0728] font-bold pt-1">
+                  <span>View Proof &amp; Results</span>
+                  <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1 text-[#7C3AED]" />
                 </div>
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Explore All Case Studies Directory Button */}
+        <div className="mt-10 text-center">
+          <Link
+            to="/case-studies"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#FAF8FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] hover:border-[#7C3AED] text-xs font-mono font-bold text-[#7C3AED] transition-all shadow-xs hover:shadow-md"
+          >
+            <span>Explore All Case Studies Directory &amp; Defensible GSC Records</span>
+            <ChevronRight className="w-4 h-4" />
+          </Link>
         </div>
 
         {/* Detailed Case Study Modal Popup */}
@@ -324,17 +337,23 @@ export default function CaseStudies() {
                   <span className="font-mono text-xs text-[#6B5B8D] font-semibold">
                     100% Authenticated Google Search Console &amp; GBP Data
                   </span>
-                  <div className="flex items-center gap-3 w-full sm:w-auto">
+                  <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
                     <button
                       onClick={() => setSelectedStudy(null)}
-                      className="w-full sm:w-auto px-5 py-2.5 bg-[#F8F4FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] text-[#3B2B5C] font-mono text-xs font-bold rounded-xl transition-colors"
+                      className="w-full sm:w-auto px-4 py-2.5 bg-[#F8F4FF] hover:bg-[#F3E8FF] border border-[#E9D8FD] text-[#3B2B5C] font-mono text-xs font-bold rounded-xl transition-colors"
                     >
-                      Close Inspection
+                      Close
                     </button>
+                    <Link
+                      to={`/case-studies/${selectedStudy.id}`}
+                      className="w-full sm:w-auto px-4 py-2.5 bg-white hover:bg-[#FAF8FF] border border-[#E9D8FD] text-[#7C3AED] font-mono text-xs font-bold rounded-xl transition-colors text-center"
+                    >
+                      Open Full Page Deep Dive
+                    </Link>
                     <a
                       href="#contact"
                       onClick={() => setSelectedStudy(null)}
-                      className="w-full sm:w-auto px-6 py-2.5 bg-gradient-to-r from-[#7C3AED] to-[#D946EF] text-white font-mono text-xs font-bold rounded-xl shadow-md hover:opacity-90 transition-opacity text-center"
+                      className="w-full sm:w-auto px-5 py-2.5 bg-gradient-to-r from-[#7C3AED] to-[#D946EF] text-white font-mono text-xs font-bold rounded-xl shadow-md hover:opacity-90 transition-opacity text-center"
                     >
                       Request Similar Audit
                     </a>

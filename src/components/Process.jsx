@@ -1,85 +1,80 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { 
-  Search, 
-  Target, 
-  FileCode2, 
-  Share2, 
-  BarChart3, 
-  ArrowRight,
-  Sparkles,
-  CheckCircle2
+  CheckCircle2, 
+  ArrowRight, 
+  ShieldCheck,
+  Search,
+  Sliders,
+  Wrench,
+  Link,
+  LineChart
 } from 'lucide-react';
 import { processSteps } from '../data/portfolioData';
 
-const stepIcons = [Search, Target, FileCode2, Share2, BarChart3];
-
 export default function Process() {
+  const iconList = [Search, Sliders, Wrench, Link, LineChart];
+
   return (
-    <section id="process" className="py-24 bg-white relative">
+    <section className="py-20 bg-[#FAF8FF] border-b border-[#E9D8FD]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="mb-16 max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F8F4FF] border border-[#E9D8FD] font-mono text-xs text-[#7C3AED] mb-3 shadow-xs font-bold">
-            <span className="w-2 h-2 rounded-full bg-[#7C3AED]" />
-            <span>HOW WE SCALE: THE 5-STAGE GROWTH SPRINT</span>
+        <div className="max-w-3xl mb-14 text-left">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#E9D8FD] mb-3 shadow-2xs">
+            <ShieldCheck className="w-3.5 h-3.5 text-[#7C3AED]" />
+            <span className="font-mono text-xs font-bold text-[#7C3AED] uppercase tracking-wider">
+              5-Stage Methodology
+            </span>
           </div>
-          <h2 className="font-heading text-3xl sm:text-5xl font-bold text-[#0F0728] leading-tight">
-            Systematized Search &amp; Growth Framework
+          <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-[#0F0728] tracking-tight mb-3">
+            A Transparent, Repeatable Framework for Search Dominance
           </h2>
-          <p className="text-[#3B2B5C] text-base mt-3 font-medium">
-            A disciplined, data-backed workflow refined across 50+ projects, delivering predictable rankings, traffic acceleration, and bottom-line revenue.
+          <p className="text-[#3B2B5C] text-base leading-relaxed">
+            I don't guess what Google wants. We start with technical diagnostics, fix real crawl blocks, prioritize commercial keywords, and execute systematically.
           </p>
         </div>
 
-        {/* 5-Step Process Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 5-Step Horizontal Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {processSteps.map((step, idx) => {
-            const Icon = stepIcons[idx] || Sparkles;
+            const Icon = iconList[idx] || Search;
 
             return (
-              <motion.div
+              <div
                 key={step.step}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className={`bg-[#F8F4FF] hover:bg-white border border-[#E9D8FD] hover:border-[#7C3AED] p-8 rounded-3xl transition-all duration-300 flex flex-col justify-between shadow-xs hover:shadow-xl hover:shadow-[#7C3AED]/12 group ${
-                  idx === 4 ? 'md:col-span-2 lg:col-span-1' : ''
-                }`}
+                className="bg-white border border-[#E9D8FD] hover:border-[#7C3AED] rounded-2xl p-5 shadow-2xs hover:shadow-md transition-all duration-200 flex flex-col justify-between"
               >
                 <div>
-                  {/* Top Step Pill & Icon */}
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="font-heading text-2xl font-extrabold text-[#7C3AED] group-hover:text-[#D946EF] transition-colors">
+                  {/* Step Number & Icon */}
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-mono text-xs font-extrabold text-[#7C3AED] bg-[#F3E8FF] px-2.5 py-0.5 rounded-md">
                       {step.step}
                     </span>
-                    <div className="p-3 rounded-2xl bg-white border border-[#E9D8FD] text-[#7C3AED] group-hover:scale-110 transition-transform shadow-xs">
-                      <Icon className="w-5 h-5" />
-                    </div>
+                    <Icon className="w-4 h-4 text-[#6B5B8D]" />
                   </div>
 
-                  {/* Title & Subtitle */}
-                  <h3 className="font-heading text-xl font-bold text-[#0F0728] mb-1">
+                  {/* Title */}
+                  <h3 className="font-heading text-base font-bold text-[#0F0728] mb-1">
                     {step.title}
                   </h3>
-                  <p className="font-mono text-xs text-[#7C3AED] font-bold mb-4">
+
+                  {/* Subtitle */}
+                  <p className="font-mono text-[10px] text-[#7C3AED] font-bold uppercase tracking-wide mb-2.5">
                     {step.subtitle}
                   </p>
 
                   {/* Description */}
-                  <p className="font-sans text-sm text-[#3B2B5C] leading-relaxed font-medium mb-6">
+                  <p className="text-xs text-[#3B2B5C] leading-relaxed mb-4">
                     {step.description}
                   </p>
                 </div>
 
-                {/* Deliverable Footer */}
-                <div className="pt-4 border-t border-[#E9D8FD] font-mono text-xs flex items-center justify-between text-[#0F0728] font-bold">
-                  <span className="text-[#6B5B8D]">Deliverable:</span>
-                  <span className="text-[#059669]">{step.deliverable}</span>
+                {/* Deliverable Badge */}
+                <div className="pt-3 border-t border-[#E9D8FD] font-mono text-[10px] text-[#059669] font-bold flex items-center gap-1">
+                  <CheckCircle2 className="w-3 h-3 shrink-0" />
+                  <span>{step.deliverable}</span>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

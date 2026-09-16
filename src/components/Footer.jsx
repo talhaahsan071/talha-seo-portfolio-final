@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowUp, Mail, Code, FileText, Lock, Globe, MapPin, Copy, Check } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
@@ -77,7 +78,7 @@ export default function Footer({ onOpenSitemap, onOpenRobots }) {
               </div>
               <span className="font-heading text-2xl font-extrabold text-[#0F0728]">{personalInfo.name}</span>
               <span className="font-mono text-[10px] font-bold text-[#7C3AED] bg-[#F3E8FF] px-2.5 py-0.5 rounded-full border border-[#E9D8FD]">
-                360° DIGITAL MARKETER
+                SEO EXPERT &bull; GROWTH STRATEGIST
               </span>
             </div>
             <p className="font-sans text-sm text-[#3B2B5C] font-medium leading-relaxed max-w-sm">
@@ -93,13 +94,20 @@ export default function Footer({ onOpenSitemap, onOpenRobots }) {
           <div className="md:col-span-3 space-y-3 font-mono text-xs">
             <span className="text-[#0F0728] font-bold uppercase tracking-wider block">Index Navigation</span>
             <div className="flex flex-col space-y-2 text-[#3B2B5C] font-semibold">
-              <a href="#about" className="hover:text-[#7C3AED] transition-colors">01. About Me</a>
-              <a href="#journey" className="hover:text-[#7C3AED] transition-colors">02. Career Journey</a>
-              <a href="#skills" className="hover:text-[#7C3AED] transition-colors">03. 360° Skills</a>
-              <a href="#case-studies" className="hover:text-[#7C3AED] transition-colors">04. Case Studies &amp; Proof</a>
-              <a href="#serp-tool" className="hover:text-[#7C3AED] transition-colors">05. Live SERP Tool</a>
-              <a href="#credentials" className="hover:text-[#7C3AED] transition-colors">06. Credentials</a>
-              <a href="#contact" className="hover:text-[#7C3AED] transition-colors">07. Contact</a>
+              <Link to="/" className="hover:text-[#7C3AED] transition-colors">01. Home Portfolio</Link>
+              <Link to="/seo-expert-in-lahore" className="text-[#7C3AED] hover:text-[#6D28D9] transition-colors font-bold flex items-center gap-1">
+                <span>02. SEO Expert in Lahore</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#F3E8FF] text-[#7C3AED] border border-[#E9D8FD]">Ranked</span>
+              </Link>
+              <Link to="/seo-expert-in-pakistan" className="text-[#059669] hover:text-[#047857] transition-colors font-bold flex items-center gap-1">
+                <span>03. SEO Expert in Pakistan</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#ECFDF5] text-[#059669] border border-[#A7F3D0]">National</span>
+              </Link>
+              <Link to="/case-studies" className="hover:text-[#7C3AED] transition-colors">04. Case Studies &amp; Proof (4)</Link>
+              <Link to="/services" className="hover:text-[#7C3AED] transition-colors">05. Strategic Services (4)</Link>
+              <a href="/#google-reviews" className="hover:text-[#7C3AED] transition-colors">06. Google Reviews (5.0★)</a>
+              <a href="/#journey" className="hover:text-[#7C3AED] transition-colors">07. Career Journey</a>
+              <a href="/#contact" className="hover:text-[#7C3AED] transition-colors">08. Contact &amp; Calendly</a>
             </div>
           </div>
 

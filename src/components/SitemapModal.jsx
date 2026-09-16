@@ -9,54 +9,90 @@ export default function SitemapModal({ isOpen, onClose }) {
 
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Primary Landing Page -->
+  <!-- Core Home Page -->
   <url>
     <loc>https://${personalInfo.domain}/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- 360 Digital Marketer & Profile -->
+
+  <!-- Location Landing Pages -->
   <url>
-    <loc>https://${personalInfo.domain}/#about</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://${personalInfo.domain}/seo-expert-in-lahore</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
   </url>
-  <!-- Career Journey & Experience -->
   <url>
-    <loc>https://${personalInfo.domain}/#journey</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://${personalInfo.domain}/seo-expert-in-pakistan</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
   </url>
-  <!-- 360 Digital Marketing & SEO Skills -->
+
+  <!-- Case Studies Directory & Projects -->
   <url>
-    <loc>https://${personalInfo.domain}/#skills</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Verified Search Case Studies -->
-  <url>
-    <loc>https://${personalInfo.domain}/#case-studies</loc>
-    <lastmod>2026-08-29</lastmod>
+    <loc>https://${personalInfo.domain}/case-studies</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
-  <!-- Certifications & Credentials -->
   <url>
-    <loc>https://${personalInfo.domain}/#credentials</loc>
-    <lastmod>2026-08-29</lastmod>
+    <loc>https://${personalInfo.domain}/case-studies/hope-enterprises</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
-  <!-- Consultation & Inquiries -->
   <url>
-    <loc>https://${personalInfo.domain}/#contact</loc>
-    <lastmod>2026-08-29</lastmod>
+    <loc>https://${personalInfo.domain}/case-studies/carrot-sun</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://${personalInfo.domain}/case-studies/2s-lawyers</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://${personalInfo.domain}/case-studies/hope-local-gmb</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Services Directory & Offerings -->
+  <url>
+    <loc>https://${personalInfo.domain}/services</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://${personalInfo.domain}/services/ecommerce-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://${personalInfo.domain}/services/local-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://${personalInfo.domain}/services/tech-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://${personalInfo.domain}/services/ai-seo</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
   </url>
 </urlset>`;
 
@@ -76,7 +112,7 @@ export default function SitemapModal({ isOpen, onClose }) {
             </div>
             <div>
               <h3 className="font-heading text-lg font-bold text-[#0F0728]">sitemap.xml Inspector</h3>
-              <p className="font-mono text-xs text-[#6B5B8D] font-semibold">Valid XML Sitemap Schema</p>
+              <p className="font-mono text-xs text-[#6B5B8D] font-semibold">Valid XML Multi-Page Sitemap Schema</p>
             </div>
           </div>
           <button
@@ -88,7 +124,7 @@ export default function SitemapModal({ isOpen, onClose }) {
         </div>
 
         <p className="text-xs text-[#3B2B5C] mb-3 font-medium">
-          Index-ready URL structure with full sitemap parameters for search engine crawlers.
+          Index-ready URL structure with full sitemap parameters for Googlebot across all pages and sub-routes.
         </p>
 
         <div className="relative bg-[#F8F4FF] border border-[#E9D8FD] rounded-2xl p-4 font-mono text-xs text-[#059669] font-semibold overflow-x-auto max-h-72">
